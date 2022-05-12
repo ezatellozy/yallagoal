@@ -179,8 +179,7 @@ span.sp3 {
   font-weight: bold;
 }
 
-.matchCenterBox .matchBox{
-
+.intro .matchCenterBox .matchBox{
   min-height: 100px;
   margin: 0;
   background: #333;
@@ -189,9 +188,8 @@ span.sp3 {
   /* display: block; */
   text-decoration: none;
   color: #FFF;
-  
 }
-.matchCenterBox .matchBox .title{
+.intro .matchCenterBox .matchBox .title{
   width: 100%;
   text-align: right;
   padding-top: 5px;
@@ -203,39 +201,39 @@ span.sp3 {
   color: #fff;
 }
 
-.matchCenterBox.light .matchBox .lTitle {
+.intro .matchCenterBox.light .matchBox .lTitle {
   color: #333;
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
 }
-.matchCenterBox.light .matchBox span.type {
+.intro .matchCenterBox.light .matchBox span.type {
   font: normal 11px/10px 'cairo';
 }
-.matchCenterBox.light .matchBox span.time {
+.intro .matchCenterBox.light .matchBox span.time {
   color: #ff8028;
   font: normal 11px/10px 'cairo';
 }
-.matchCenterBox .teams{
+.intro .matchCenterBox .teams{
   position: relative;
   color: #333;
 
   padding-top: 10px;
 }
-.matchCenterBox .teams .team1,
-.matchCenterBox .teams .team2{
+.intro .matchCenterBox .teams .team1,
+.intro .matchCenterBox .teams .team2{
   display: flex;
   flex-direction: column;
   text-align: center;
 
 }
-.matchCenterBox .teams span img{
+.intro .matchCenterBox .teams span img{
   width: 30px;
   height: 30px;
 
 }
-.matchCenterBox .teams  .teamName{
+.intro .matchCenterBox .teams  .teamName{
   font: normal 12px/20px 'cairo';
   text-align: center;
   white-space: pre;
@@ -243,25 +241,25 @@ span.sp3 {
 
 
 }
-.matchCenterBox.light .matchBox .teams .stat .live span.no {
+.intro .matchCenterBox.light .matchBox .teams .stat .live span.no {
   background: #999;
   font: normal 12px cairo;
   padding: 2px 10px 0 10px;
   color: #fff;
   border-radius: 100px;
 }
-.matchCenterBox.light .matchBox .teams .stat .live span.notYet {
+.intro .matchCenterBox.light .matchBox .teams .stat .live span.notYet {
   background: #00aa4c;
   font: normal 11px cairo;
   padding: 0px 10px 0 10px;
   color: #fff;
   border-radius: 100px;
 }
-.matchBox .teams .stat span.matchDate {
+.intro .matchBox .teams .stat span.matchDate {
   float: none;
   font: bold 16px/30px 'cairo';
 }
-.matchCenterBox .moreMatchesLink {
+.intro .matchCenterBox .moreMatchesLink {
   text-align: left;
   font: normal 14px 'cairo';
   padding: 5px;
@@ -1108,6 +1106,7 @@ ul{
   color: #6c757d;
   content: var(--bs-breadcrumb-divider, "/");
 }
+
 #fullMatchCenterTable .matchsDays {
   margin: 0 !important;
 }
@@ -1142,9 +1141,6 @@ ul{
   background: #ddd;
   border-bottom-color: #f5f5f5;
 }
-#fullMatchCenterTable .matchCenterBox.full .nav-tabs {
-  height: 42px;
-}
 #fullMatchCenterTable  .matchCenterBox.light .nav-tabs .nav-item {
   padding: 10px 0;
 }
@@ -1157,76 +1153,78 @@ ul{
   color: #f9f9f9;
   font-size: 13px;
   font-weight: bold;
-  padding: 2px 20px;
   text-align: center;
-  width: 32.333333% !important;
   display: inline-block;
   border: 1px solid #dddddd;
 }
 #fullMatchCenterTable .nav-tabs .nav-link {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
-  /* border-top-right-radius: 0.25rem; */
 }
 #fullMatchCenterTable .nav-tabs .nav-item {
   margin-bottom: -1px;
 }
 #fullMatchCenterTable .matchCenterBox.light .nav-tabs .nav-item {
   color: #555;
+  line-height: 22px;
   font-size: 12px;
 }
-/* 
 #fullMatchCenterTable .matchBox.dark.title.row {
   background: #252525 !important;
   color: #fff !important;
 }
+#fullMatchCenterTable .matchBox.title.row img {
+  max-width: 35px;
+  max-height: 35px;
+  margin: 0;
+  padding: 0;
+}
+#fullMatchCenterTable .matchBox .legTitle {
+  padding: 5px;
+  font-size: 14px;
+}
+ 
 #fullMatchCenterTable .matchBox .newsLinks {
   padding-left: 0;
-} */
-
-/* #fullMatchCenterTable .matchCenterBox.full .matchBox {
+}
+ #fullMatchCenterTable .matchCenterBox.full .matchBox {
   padding: 10px;
-} */
-/* .matchCenterBox .teams {
+} 
+.matchCenterBox .teams {
   position: relative;
   color: #333;
-} */
-/* #fullMatchCenterTable .matchBox .teams .team1 {
+
+}
+#fullMatchCenterTable .matchBox .teams .team1 {
   float: right;
   width: 25%;
   direction: ltr;
   text-align: center;
   margin-top: 7px;
-} */
+}
 
-/* .matchCenterBox.light .matchBox .teams .team1 span, .matchCenterBox.light .matchBox .teams .team2 span {
+.matchCenterBox.light .matchBox .teams .team1 span, .matchCenterBox.light .matchBox .teams .team2 span {
   width: 100%;
   color: #333;
-} */
+}
 
-/* #fullMatchCenterTable .matchBox .teams .team1 span img {
+#fullMatchCenterTable .matchBox .teams .team1 span img {
   width: 40px;
   height: 40px;
-  /* float: left; */
-  /* margin-left: 10px; */
+}
 
 
-/* #fullMatchCenterTable .matchCenterBox.light .matchBox .teams .team1 span, #fullMatchCenterTable .matchCenterBox.light .matchBox .teams .team1 h3, #fullMatchCenterTable .matchCenterBox.light .matchBox .teams .team2 span, #fullMatchCenterTable .matchCenterBox.light .matchBox .teams .team2 h3 {
+#fullMatchCenterTable .matchCenterBox.light .matchBox .teams .team1 span, #fullMatchCenterTable .matchCenterBox.light .matchBox .teams .team1 h3, #fullMatchCenterTable .matchCenterBox.light .matchBox .teams .team2 span, #fullMatchCenterTable .matchCenterBox.light .matchBox .teams .team2 h3 {
   width: 100%;
   font-weight: 600;
   margin-top: 5px;
   font-size: 14px;
-} */
-/* #fullMatchCenterTable .matchBox.title.row img {
-  max-width: 35px;
-  max-height: 35px;
-  margin: 0;
-  padding: 0;
-} */
-/* #fullMatchCenterTable .matchBox .legTitle {
+}
+
+#fullMatchCenterTable .matchBox .legTitle {
   padding: 5px;
   font-size: 14px;
-} */
+}
 button.datepicker {
   background: transparent;
   border: 0;
@@ -1235,11 +1233,17 @@ button.datepicker {
   color: #3a8bcc;
   cursor: pointer;
 }
-/* #fullMatchCenterTable .matchBox .newsLinks {
+#fullMatchCenterTable .matchBox .newsLinks {
   padding-left: 0;
-} */
+}
+
+
 
 /* Match Center */
 .footer {
   background-color: var(--main-color-alt);
+}
+
+.footer .copyrights{
+  background-color: var(--main-color);
 }

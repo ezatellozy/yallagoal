@@ -56,12 +56,9 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-
                         <li class="nav-item">
-                            <a class="nav-link" href="#">مركز المباريات</a>
+                            <a class="nav-link" href="matches.php">مركز المباريات</a>
                         </li>
-
-
                     </ul>
 
                 </div>
