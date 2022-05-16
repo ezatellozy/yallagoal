@@ -34,9 +34,9 @@
                         </div>
 
                         <div class="image-box">
-                            <img src="https://img.btolat.com/2022/5/12/news/282800/large.jpg" alt="تير شتيجن">
+                            <img class="img-fluid" src="https://img.btolat.com/2022/5/12/news/282800/large.jpg"
+                                alt="تير شتيجن">
                         </div>
-
                         <div class="article-body">
                             <p>كشفت تقارير صحفية إسبانية موقف نادي <a href="#">برشلونة</a>&nbsp;من رحيل&nbsp;الحارس
                                 الألماني تير شتيجن بعد التقارير الأخيرة التي كانت تفيد بذلك.</p>
@@ -131,17 +131,7 @@
 
                                 </div>
                             </div>
-
-
-
-
-
-
-
                         </div>
-
-
-
                     </article>
 
                     <div class="box bg-white moreVideos allNews">
@@ -171,15 +161,8 @@
                     </div>
                     <div class="box fbComm bg-white">
                         <h4 class="title">التعليقات</h4>
-                        <div style="position:relative;height:0;padding-bottom:105%">
-                            <iframe id="iframe_comments" class="svas-player"
-                                src="//social.btolat.com/Comments/Section/News/282800"
-                                style="position:absolute;width:100%;height:100%;left:0;top:0" frameborder="0"
-                                allowfullscreen=""></iframe>
-                        </div>
+                        <?php include './comments.php'; ?>
                     </div>
-
-
                 </div>
                 <div class="col-xl-4 d-none d-xl-block left-side">
                     <?php include 'side-section.php'; ?>

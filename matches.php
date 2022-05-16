@@ -1,7 +1,7 @@
 <?php include 'layouts/header.php'; ?>
 <section>
     <div id="fullMatchCenterTable">
-        <div class="container pt-4">
+        <div class="container-fluid pt-2">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="">مركز المباريات</a></li>
@@ -12,7 +12,7 @@
                     </li>
                 </ol>
             </nav>
-            <div class="matchsDays row">
+            <div class="matchsDays row text-center">
                 <div class="col day first" data-date="5.10.2022">
                     <div class="time">
                         <div class="dayDate"><span>الثلاثاء</span><time>10/5/2022</time></div>
@@ -38,24 +38,12 @@
                         <div class="dayDate"><span>السبت</span><time>14/5/2022</time></div>
                     </div>
                 </div>
-                <div>
 
-                    <button class="datepicker" data-provide="datepicker"><i class="fa fa-calendar"></i></button>
-                </div>
-                <div>
-
-
-
-
-                </div>
-
-
-
+                <button class="datepicker" id="datepicker" data-provide="datepicker"><i
+                        class="fa fa-calendar"></i></button>
 
             </div>
             <div id="matchtable" class="cardBox">
-
-
                 <div class="matchCenterBox light full">
                     <nav>
                         <div class="nav nav-tabs justify-content-between overflow-hidden" id="nav-tab" role="tablist">
@@ -76,20 +64,20 @@
                             </select>
                         </div>
                     </nav>
-                    <div class="tab-content">
+                    <div class="tab-content overflow-hidden">
                         <div class="tab-content" id="nav-tab-content">
                             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                                <div class="matchtableX" data-stat-notyet="" data-leg-name="1204">
+                                <div class="matchtableX">
                                     <div class="row matchBox title dark">
-                                        <div class="col-6">
+                                        <div class="col">
                                             <div class="row">
-                                                <div class="col-2"><img
+                                                <div class="col-2"><img class="img-fluid"
                                                         src="https://img.btolat.com/tourlogo/32eab27b-e23c-4d16-ad92-605a1d6ab55d.png"
                                                         alt="الدوري الإنجليزي"></div>
                                                 <h2 class="col-10 legTitle">الدوري الإنجليزي</h2>
                                             </div>
                                         </div>
-                                        <div class="col-6 newsLinks">
+                                        <div class="col newsLinks">
                                             <div class="row">
                                                 <a href="/league/news/1204/premier-league" class="col">اخبار</a>
                                                 <a href="/league/videos/1204/premier-league" class="col">فيديو</a>
@@ -99,107 +87,121 @@
                                         </div>
                                     </div>
                                     <ul class="list-unstyled">
-                                        <li id="2994140" class="fullMatchBox notYet" data-stat="notYet">
+                                        <li id="3150755" class="live">
                                             <div class="matchBox">
-                                                <div class="teams row">
-                                                    <a class="team1 col" href="/team/9406/tottenham-hotspur">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9406.png"
-                                                                alt="توتنهام هوتسبر" title="توتنهام هوتسبر"></span>
-                                                        <h3 class="teamName">توتنهام هوتسبر</h3>
-                                                    </a>
-
-                                                    <a class="stat col" href="/matches/details/2994140">
-
-                                                        <div class="status"><span>لم تبدأ</span></div>
-                                                        <div id="reslt2994140" class="results clearfix">
-                                                            <div class="team1G"></div>
-                                                            <div class="team2G"></div>
-                                                        </div>
-                                                        <span class="matchDate" id="timer2994140"> <span>08:45 م</span>
-                                                        </span>
-                                                    </a>
-                                                    <a class="team2 col" href="/team/9002/arsenal">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9002.png"
-                                                                alt="آرسنال" title="آرسنال"></span>
-                                                        <h3 class="teamName">آرسنال</h3>
-                                                    </a>
-                                                    <div class="teamsfooter col-12">
-                                                        <span content="توتنهام هوتسبر ضد آرسنال" itemprop="name">
-                                                            توتنهام هوتسبر ضد آرسنال
-                                                        </span> فى <span>الدوري الإنجليزي</span>
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>مباشر</span></div>
+                                                            <span class="xmatchDate" id="timer3150755"><span>16'</span>
+                                                            </span>
+                                                            <div class="results d-flex justify-content-between">
+                                                                <div class="team1G">1 </div>
+                                                                <div class="team2G">0 </div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
-                                </div>
-                                <div class="matchtableX" data-stat-notyet="" data-leg-name="1204">
-                                    <div class="row matchBox title dark">
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <div class="col-2"><img
-                                                        src="https://img.btolat.com/tourlogo/32eab27b-e23c-4d16-ad92-605a1d6ab55d.png"
-                                                        alt="الدوري الإنجليزي"></div>
-                                                <h2 class="col-10 legTitle">الدوري الإنجليزي</h2>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 newsLinks">
-                                            <div class="row">
-                                                <a href="/league/news/1204/premier-league" class="col">اخبار</a>
-                                                <a href="/league/videos/1204/premier-league" class="col">فيديو</a>
-                                                <a href="/league/standings/1204/premier-league" class="col">ترتيب</a>
-                                                <a href="/league/fixtures/1204/premier-league" class="col">مباريات</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <ul class="list-unstyled">
-                                        <li id="2994140" class="fullMatchBox notYet" data-stat="notYet">
+                                        <li id="3150755" class="notYet">
                                             <div class="matchBox">
-                                                <div class="teams row">
-                                                    <a class="team1 col" href="/team/9406/tottenham-hotspur">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9406.png"
-                                                                alt="توتنهام هوتسبر" title="توتنهام هوتسبر"></span>
-                                                        <h3 class="teamName">توتنهام هوتسبر</h3>
-                                                    </a>
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>لم تبدأ</span></div>
+                                                            <span class="xmatchDate"><span>06:30 م</span>
+                                                            </span>
 
-                                                    <a class="stat col" href="/matches/details/2994140">
-
-                                                        <div class="status"><span>لم تبدأ</span></div>
-                                                        <div id="reslt2994140" class="results clearfix">
-                                                            <div class="team1G"></div>
-                                                            <div class="team2G"></div>
-                                                        </div>
-                                                        <span class="matchDate" id="timer2994140"> <span>08:45 م</span>
-                                                        </span>
-                                                    </a>
-                                                    <a class="team2 col" href="/team/9002/arsenal">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9002.png"
-                                                                alt="آرسنال" title="آرسنال"></span>
-                                                        <h3 class="teamName">آرسنال</h3>
-                                                    </a>
-                                                    <div class="teamsfooter col-12">
-                                                        <span content="توتنهام هوتسبر ضد آرسنال" itemprop="name">
-                                                            توتنهام هوتسبر ضد آرسنال
-                                                        </span> فى <span>الدوري الإنجليزي</span>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
+                                        <li id="3150755" class="ended">
+                                            <div class="matchBox">
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>مباشر</span></div>
+                                                            <span class="xmatchDate" id="timer3150755"><span>16'</span>
+                                                            </span>
+                                                            <div class="results d-flex justify-content-between">
+                                                                <div class="team1G">1 </div>
+                                                                <div class="team2G">0 </div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="ended" role="tabpanel" aria-labelledby="ended-tab">
-                                <div class="matchtableX" data-stat-notyet="" data-leg-name="1204">
+                                <div class="matchtableX">
                                     <div class="row matchBox title dark">
-                                        <div class="col-6">
+                                        <div class="col">
                                             <div class="row">
-                                                <div class="col-2"><img
+                                                <div class="col-2"><img class="img-fluid"
                                                         src="https://img.btolat.com/tourlogo/32eab27b-e23c-4d16-ad92-605a1d6ab55d.png"
                                                         alt="الدوري الإنجليزي"></div>
                                                 <h2 class="col-10 legTitle">الدوري الإنجليزي</h2>
                                             </div>
                                         </div>
-                                        <div class="col-6 newsLinks">
+                                        <div class="col newsLinks">
                                             <div class="row">
                                                 <a href="/league/news/1204/premier-league" class="col">اخبار</a>
                                                 <a href="/league/videos/1204/premier-league" class="col">فيديو</a>
@@ -209,107 +211,125 @@
                                         </div>
                                     </div>
                                     <ul class="list-unstyled">
-                                        <li id="2994140" class="fullMatchBox notYet" data-stat="notYet">
+
+                                        <li id="3150755" class="ended">
                                             <div class="matchBox">
-                                                <div class="teams row">
-                                                    <a class="team1 col" href="/team/9406/tottenham-hotspur">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9406.png"
-                                                                alt="توتنهام هوتسبر" title="توتنهام هوتسبر"></span>
-                                                        <h3 class="teamName">توتنهام هوتسبر</h3>
-                                                    </a>
-
-                                                    <a class="stat col" href="/matches/details/2994140">
-
-                                                        <div class="status"><span>لم تبدأ</span></div>
-                                                        <div id="reslt2994140" class="results clearfix">
-                                                            <div class="team1G"></div>
-                                                            <div class="team2G"></div>
-                                                        </div>
-                                                        <span class="matchDate" id="timer2994140"> <span>08:45 م</span>
-                                                        </span>
-                                                    </a>
-                                                    <a class="team2 col" href="/team/9002/arsenal">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9002.png"
-                                                                alt="آرسنال" title="آرسنال"></span>
-                                                        <h3 class="teamName">آرسنال</h3>
-                                                    </a>
-                                                    <div class="teamsfooter col-12">
-                                                        <span content="توتنهام هوتسبر ضد آرسنال" itemprop="name">
-                                                            توتنهام هوتسبر ضد آرسنال
-                                                        </span> فى <span>الدوري الإنجليزي</span>
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>مباشر</span></div>
+                                                            <span class="xmatchDate" id="timer3150755"><span>16'</span>
+                                                            </span>
+                                                            <div class="results d-flex justify-content-between">
+                                                                <div class="team1G">1 </div>
+                                                                <div class="team2G">0 </div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
-                                </div>
-                                <div class="matchtableX" data-stat-notyet="" data-leg-name="1204">
-                                    <div class="row matchBox title dark">
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <div class="col-2"><img
-                                                        src="https://img.btolat.com/tourlogo/32eab27b-e23c-4d16-ad92-605a1d6ab55d.png"
-                                                        alt="الدوري الإنجليزي"></div>
-                                                <h2 class="col-10 legTitle">الدوري الإنجليزي</h2>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 newsLinks">
-                                            <div class="row">
-                                                <a href="/league/news/1204/premier-league" class="col">اخبار</a>
-                                                <a href="/league/videos/1204/premier-league" class="col">فيديو</a>
-                                                <a href="/league/standings/1204/premier-league" class="col">ترتيب</a>
-                                                <a href="/league/fixtures/1204/premier-league" class="col">مباريات</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <ul class="list-unstyled">
-                                        <li id="2994140" class="fullMatchBox notYet" data-stat="notYet">
+                                        <li id="3150755" class="ended">
                                             <div class="matchBox">
-                                                <div class="teams row">
-                                                    <a class="team1 col" href="/team/9406/tottenham-hotspur">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9406.png"
-                                                                alt="توتنهام هوتسبر" title="توتنهام هوتسبر"></span>
-                                                        <h3 class="teamName">توتنهام هوتسبر</h3>
-                                                    </a>
-
-                                                    <a class="stat col" href="/matches/details/2994140">
-
-                                                        <div class="status"><span>لم تبدأ</span></div>
-                                                        <div id="reslt2994140" class="results clearfix">
-                                                            <div class="team1G"></div>
-                                                            <div class="team2G"></div>
-                                                        </div>
-                                                        <span class="matchDate" id="timer2994140"> <span>08:45 م</span>
-                                                        </span>
-                                                    </a>
-                                                    <a class="team2 col" href="/team/9002/arsenal">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9002.png"
-                                                                alt="آرسنال" title="آرسنال"></span>
-                                                        <h3 class="teamName">آرسنال</h3>
-                                                    </a>
-                                                    <div class="teamsfooter col-12">
-                                                        <span content="توتنهام هوتسبر ضد آرسنال" itemprop="name">
-                                                            توتنهام هوتسبر ضد آرسنال
-                                                        </span> فى <span>الدوري الإنجليزي</span>
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>مباشر</span></div>
+                                                            <span class="xmatchDate" id="timer3150755"><span>16'</span>
+                                                            </span>
+                                                            <div class="results d-flex justify-content-between">
+                                                                <div class="team1G">1 </div>
+                                                                <div class="team2G">0 </div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
+                                        <li id="3150755" class="ended">
+                                            <div class="matchBox">
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>مباشر</span></div>
+                                                            <span class="xmatchDate" id="timer3150755"><span>16'</span>
+                                                            </span>
+                                                            <div class="results d-flex justify-content-between">
+                                                                <div class="team1G">1 </div>
+                                                                <div class="team2G">0 </div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="live" role="tabpanel" aria-labelledby="live-tab">
-                                <div class="matchtableX" data-stat-notyet="" data-leg-name="1204">
+                                <div class="matchtableX">
                                     <div class="row matchBox title dark">
-                                        <div class="col-6">
+                                        <div class="col">
                                             <div class="row">
-                                                <div class="col-2"><img
+                                                <div class="col-2"><img class="img-fluid"
                                                         src="https://img.btolat.com/tourlogo/32eab27b-e23c-4d16-ad92-605a1d6ab55d.png"
                                                         alt="الدوري الإنجليزي"></div>
                                                 <h2 class="col-10 legTitle">الدوري الإنجليزي</h2>
                                             </div>
                                         </div>
-                                        <div class="col-6 newsLinks">
+                                        <div class="col newsLinks">
                                             <div class="row">
                                                 <a href="/league/news/1204/premier-league" class="col">اخبار</a>
                                                 <a href="/league/videos/1204/premier-league" class="col">فيديو</a>
@@ -319,88 +339,104 @@
                                         </div>
                                     </div>
                                     <ul class="list-unstyled">
-                                        <li id="2994140" class="fullMatchBox notYet" data-stat="notYet">
+                                        <li id="3150755" class="live">
                                             <div class="matchBox">
-                                                <div class="teams row">
-                                                    <a class="team1 col" href="/team/9406/tottenham-hotspur">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9406.png"
-                                                                alt="توتنهام هوتسبر" title="توتنهام هوتسبر"></span>
-                                                        <h3 class="teamName">توتنهام هوتسبر</h3>
-                                                    </a>
-
-                                                    <a class="stat col" href="/matches/details/2994140">
-
-                                                        <div class="status"><span>لم تبدأ</span></div>
-                                                        <div id="reslt2994140" class="results clearfix">
-                                                            <div class="team1G"></div>
-                                                            <div class="team2G"></div>
-                                                        </div>
-                                                        <span class="matchDate" id="timer2994140"> <span>08:45 م</span>
-                                                        </span>
-                                                    </a>
-                                                    <a class="team2 col" href="/team/9002/arsenal">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9002.png"
-                                                                alt="آرسنال" title="آرسنال"></span>
-                                                        <h3 class="teamName">آرسنال</h3>
-                                                    </a>
-                                                    <div class="teamsfooter col-12">
-                                                        <span content="توتنهام هوتسبر ضد آرسنال" itemprop="name">
-                                                            توتنهام هوتسبر ضد آرسنال
-                                                        </span> فى <span>الدوري الإنجليزي</span>
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>مباشر</span></div>
+                                                            <span class="xmatchDate" id="timer3150755"><span>16'</span>
+                                                            </span>
+                                                            <div class="results d-flex justify-content-between">
+                                                                <div class="team1G">1 </div>
+                                                                <div class="team2G">0 </div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
-                                </div>
-                                <div class="matchtableX" data-stat-notyet="" data-leg-name="1204">
-                                    <div class="row matchBox title dark">
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <div class="col-2"><img
-                                                        src="https://img.btolat.com/tourlogo/32eab27b-e23c-4d16-ad92-605a1d6ab55d.png"
-                                                        alt="الدوري الإنجليزي"></div>
-                                                <h2 class="col-10 legTitle">الدوري الإنجليزي</h2>
-                                            </div>
-                                        </div>
-                                        <div class="col-6 newsLinks">
-                                            <div class="row">
-                                                <a href="/league/news/1204/premier-league" class="col">اخبار</a>
-                                                <a href="/league/videos/1204/premier-league" class="col">فيديو</a>
-                                                <a href="/league/standings/1204/premier-league" class="col">ترتيب</a>
-                                                <a href="/league/fixtures/1204/premier-league" class="col">مباريات</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <ul class="list-unstyled">
-                                        <li id="2994140" class="fullMatchBox notYet" data-stat="notYet">
+                                        <li id="3150755" class="live">
                                             <div class="matchBox">
-                                                <div class="teams row">
-                                                    <a class="team1 col" href="/team/9406/tottenham-hotspur">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9406.png"
-                                                                alt="توتنهام هوتسبر" title="توتنهام هوتسبر"></span>
-                                                        <h3 class="teamName">توتنهام هوتسبر</h3>
-                                                    </a>
-
-                                                    <a class="stat col" href="/matches/details/2994140">
-
-                                                        <div class="status"><span>لم تبدأ</span></div>
-                                                        <div id="reslt2994140" class="results clearfix">
-                                                            <div class="team1G"></div>
-                                                            <div class="team2G"></div>
-                                                        </div>
-                                                        <span class="matchDate" id="timer2994140"> <span>08:45 م</span>
-                                                        </span>
-                                                    </a>
-                                                    <a class="team2 col" href="/team/9002/arsenal">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9002.png"
-                                                                alt="آرسنال" title="آرسنال"></span>
-                                                        <h3 class="teamName">آرسنال</h3>
-                                                    </a>
-                                                    <div class="teamsfooter col-12">
-                                                        <span content="توتنهام هوتسبر ضد آرسنال" itemprop="name">
-                                                            توتنهام هوتسبر ضد آرسنال
-                                                        </span> فى <span>الدوري الإنجليزي</span>
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>مباشر</span></div>
+                                                            <span class="xmatchDate" id="timer3150755"><span>16'</span>
+                                                            </span>
+                                                            <div class="results d-flex justify-content-between">
+                                                                <div class="team1G">1 </div>
+                                                                <div class="team2G">0 </div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="3150755" class="live">
+                                            <div class="matchBox">
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>مباشر</span></div>
+                                                            <span class="xmatchDate" id="timer3150755"><span>16'</span>
+                                                            </span>
+                                                            <div class="results d-flex justify-content-between">
+                                                                <div class="team1G">1 </div>
+                                                                <div class="team2G">0 </div>
+                                                            </div>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -409,17 +445,17 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="notYet" role="tabpanel" aria-labelledby="notYet-tab">
-                                <div class="matchtableX" data-stat-notyet="" data-leg-name="1204">
+                                <div class="matchtableX">
                                     <div class="row matchBox title dark">
-                                        <div class="col-6">
+                                        <div class="col">
                                             <div class="row">
-                                                <div class="col-2"><img
+                                                <div class="col-2"><img class="img-fluid"
                                                         src="https://img.btolat.com/tourlogo/32eab27b-e23c-4d16-ad92-605a1d6ab55d.png"
                                                         alt="الدوري الإنجليزي"></div>
                                                 <h2 class="col-10 legTitle">الدوري الإنجليزي</h2>
                                             </div>
                                         </div>
-                                        <div class="col-6 newsLinks">
+                                        <div class="col newsLinks">
                                             <div class="row">
                                                 <a href="/league/news/1204/premier-league" class="col">اخبار</a>
                                                 <a href="/league/videos/1204/premier-league" class="col">فيديو</a>
@@ -429,51 +465,112 @@
                                         </div>
                                     </div>
                                     <ul class="list-unstyled">
-                                        <li id="2994140" class="fullMatchBox notYet" data-stat="notYet">
+                                        <li id="3150755" class="notYet">
                                             <div class="matchBox">
-                                                <div class="teams row">
-                                                    <a class="team1 col" href="/team/9406/tottenham-hotspur">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9406.png"
-                                                                alt="توتنهام هوتسبر" title="توتنهام هوتسبر"></span>
-                                                        <h3 class="teamName">توتنهام هوتسبر</h3>
-                                                    </a>
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>لم تبدأ</span></div>
+                                                            <span class="xmatchDate"><span>06:30 م</span>
+                                                            </span>
 
-                                                    <a class="stat col" href="/matches/details/2994140">
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="3150755" class="notYet">
+                                            <div class="matchBox">
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>لم تبدأ</span></div>
+                                                            <span class="xmatchDate"><span>06:30 م</span>
+                                                            </span>
 
-                                                        <div class="status"><span>لم تبدأ</span></div>
-                                                        <div id="reslt2994140" class="results clearfix">
-                                                            <div class="team1G"></div>
-                                                            <div class="team2G"></div>
-                                                        </div>
-                                                        <span class="matchDate" id="timer2994140"> <span>08:45 م</span>
-                                                        </span>
-                                                    </a>
-                                                    <a class="team2 col" href="/team/9002/arsenal">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9002.png"
-                                                                alt="آرسنال" title="آرسنال"></span>
-                                                        <h3 class="teamName">آرسنال</h3>
-                                                    </a>
-                                                    <div class="teamsfooter col-12">
-                                                        <span content="توتنهام هوتسبر ضد آرسنال" itemprop="name">
-                                                            توتنهام هوتسبر ضد آرسنال
-                                                        </span> فى <span>الدوري الإنجليزي</span>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="3150755" class="notYet">
+                                            <div class="matchBox">
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>لم تبدأ</span></div>
+                                                            <span class="xmatchDate"><span>06:30 م</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="matchtableX" data-stat-notyet="" data-leg-name="1204">
+                                <div class="matchtableX">
                                     <div class="row matchBox title dark">
-                                        <div class="col-6">
+                                        <div class="col">
                                             <div class="row">
-                                                <div class="col-2"><img
+                                                <div class="col-2"><img class="img-fluid"
                                                         src="https://img.btolat.com/tourlogo/32eab27b-e23c-4d16-ad92-605a1d6ab55d.png"
                                                         alt="الدوري الإنجليزي"></div>
                                                 <h2 class="col-10 legTitle">الدوري الإنجليزي</h2>
                                             </div>
                                         </div>
-                                        <div class="col-6 newsLinks">
+                                        <div class="col newsLinks">
                                             <div class="row">
                                                 <a href="/league/news/1204/premier-league" class="col">اخبار</a>
                                                 <a href="/league/videos/1204/premier-league" class="col">فيديو</a>
@@ -483,34 +580,95 @@
                                         </div>
                                     </div>
                                     <ul class="list-unstyled">
-                                        <li id="2994140" class="fullMatchBox notYet" data-stat="notYet">
+                                        <li id="3150755" class="notYet">
                                             <div class="matchBox">
-                                                <div class="teams row">
-                                                    <a class="team1 col" href="/team/9406/tottenham-hotspur">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9406.png"
-                                                                alt="توتنهام هوتسبر" title="توتنهام هوتسبر"></span>
-                                                        <h3 class="teamName">توتنهام هوتسبر</h3>
-                                                    </a>
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>لم تبدأ</span></div>
+                                                            <span class="xmatchDate"><span>06:30 م</span>
+                                                            </span>
 
-                                                    <a class="stat col" href="/matches/details/2994140">
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="3150755" class="notYet">
+                                            <div class="matchBox">
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>لم تبدأ</span></div>
+                                                            <span class="xmatchDate"><span>06:30 م</span>
+                                                            </span>
 
-                                                        <div class="status"><span>لم تبدأ</span></div>
-                                                        <div id="reslt2994140" class="results clearfix">
-                                                            <div class="team1G"></div>
-                                                            <div class="team2G"></div>
-                                                        </div>
-                                                        <span class="matchDate" id="timer2994140"> <span>08:45 م</span>
-                                                        </span>
-                                                    </a>
-                                                    <a class="team2 col" href="/team/9002/arsenal">
-                                                        <span><img src="https://img.btolat.com/teamslogo/9002.png"
-                                                                alt="آرسنال" title="آرسنال"></span>
-                                                        <h3 class="teamName">آرسنال</h3>
-                                                    </a>
-                                                    <div class="teamsfooter col-12">
-                                                        <span content="توتنهام هوتسبر ضد آرسنال" itemprop="name">
-                                                            توتنهام هوتسبر ضد آرسنال
-                                                        </span> فى <span>الدوري الإنجليزي</span>
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li id="3150755" class="notYet">
+                                            <div class="matchBox">
+                                                <div class="teams d-flex flex-wrap ">
+                                                    <div class="team-header d-flex w-100 justify-content-between">
+                                                        <a class="team1" href="/team/8930/ismaily">
+                                                            <span><img src="https://img.btolat.com/teamslogo/8930.png"
+                                                                    alt="الإسماعيلي" title="الإسماعيلي"></span>
+                                                            <h3 class="teamName">الإسماعيلي</h3>
+                                                        </a>
+                                                        <a class="stat" href="/matches/details/3150755">
+                                                            <div class="status"><span>لم تبدأ</span></div>
+                                                            <span class="xmatchDate"><span>06:30 م</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a class="team2" href="/team/33716/ceramica-cleopatra">
+                                                            <span><img src="https://img.btolat.com/teamslogo/33716.png"
+                                                                    alt="سيراميكا كليوباترا"
+                                                                    title="سيراميكا كليوباترا"></span>
+                                                            <h3 class="teamName">سيراميكا كليوباترا</h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="teamsfooter w-100">
+                                                        <span content="الإسماعيلي ضد سيراميكا كليوباترا"
+                                                            itemprop="name">
+                                                            الإسماعيلي ضد سيراميكا كليوباترا
+                                                        </span> فى <span>الدوري المصري</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -521,11 +679,10 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </section>
 <?php include 'layouts/footer.php'; ?>

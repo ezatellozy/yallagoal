@@ -6,9 +6,8 @@
             <div class="row">
                 <div class="col-xl-8 right-side overflow-auto">
                     <article id="videos-box" class="post social">
-                        <div class="big-video-box mLikePage">
+                        <div class="big-video-box">
                             <div class="topProfile">
-
                                 <div class="topData">
                                     <a href="#9" title="سعد محمد على">
                                         <img class="userImage"
@@ -24,8 +23,6 @@
                             <h1 class="title">
                                 مراسم تتويج انتر ميلان بطلا لكاس ايطاليا
                             </h1>
-
-
                             <div class="imageOfPost">
                                 <div>
                                     <iframe class="contentVencher" width="100%" height="421px" frameborder="0"
@@ -117,43 +114,7 @@
                     </article>
                     <div class="box fbComm bg-white">
                         <h2 class="title text-end me-3 pt-3">التعليقات</h2>
-                        <div style="position:relative;height:0;padding-bottom:105%">
-                            <p class="text-end me-3">-</p>
-                            <div id="comments-container58761" class="jquery-comments read-only">
-                                <div class="commenting-field main"></div>
-                                <ul class="navigation">
-                                    <div class="navigation-wrapper">
-                                        <li class="active">الأحدث
-                                        </li>
-                                        <li>الأقدم</li>
-                                        <li>الأكثر تفاعلا</li>
-                                    </div>
-                                    <div class="navigation-wrapper responsive">
-                                        <li class="title active">
-                                            <header>الأحدث</header>
-                                        </li>
-                                        <ul class="dropdown">
-                                            <liclass="active">
-                                                الأحدث</li>
-                                                <li>الأقدم</li>
-                                                <li>الأكثر تفاعلا
-                                                </li>
-                                        </ul>
-                                    </div>
-                                </ul>
-                                <div>
-                                    <ul id="comment-list58761" class="main"></ul>
-                                    <div class="no-comments no-data"><i class="fa fa-comments fa-2x"></i><br>لا يوجد
-                                        تعليقات</div>
-                                </div>
-                            </div>
-                            <div style="direction:rtl">
-                                <p>
-                                    برجاء <a href="#">تسجيل الدخول</a> او
-                                    <a href="#">اشتراك جديد</a> لكتابة تعليق
-                                </p>
-                            </div>
-                        </div>
+                        <?php include './comments.php'; ?>
                     </div>
                 </div>
                 <div class="col-xl-4 d-none d-xl-block left-side">

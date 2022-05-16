@@ -97,7 +97,7 @@
                             <div class="title bg1">
                                 اهم المباريات
                             </div>
-                            <ul class="nav nav-tabs justify-content-between mb-3 p-0" id="ex1" role="tablist">
+                            <ul class="nav nav-tabs justify-content-between mb-1 p-0" id="ex1" role="tablist">
                                 <li class="nav-item flex-grow-1" role="presentation">
                                     <a class="nav-link" id="yesterday" data-mdb-toggle="tab" href="#yesterday-tob"
                                         role="tab" aria-controls="yesterday-tob" aria-selected="false">أمس</a>

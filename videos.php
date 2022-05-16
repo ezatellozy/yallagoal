@@ -43,7 +43,6 @@
                         ?>
                         <div class="big-video-box xrow" data-val="58682" data-type="">
                             <div class="topProfile">
-
                                 <div class="topData">
                                     <a href="#11" title="أنس أسامة">
                                         <img class="userImage"
@@ -61,14 +60,11 @@
                                 ملخص مباراة ارسنال وليدز يونايتد (2-1) الدوري الانجليزي
                             </h1>
                             <a href="video.php">
-
                                 <div class="imageOfPost">
-
                                     <img class="w-100" src="https://img.btolat.com/2022/5/8/video/58682/l.jpg"
                                         alt="ملخص مباراة ارسنال وليدز يونايتد 2 1 الدوري الانجليزي">
                                 </div>
                             </a>
-
                         </div>
                         <?php } ?>
                     </article>
