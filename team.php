@@ -1,68 +1,125 @@
 <?php include 'layouts/header.php'; ?>
 <section>
-    <div class="league videos py-3">
+    <div class="league team py-3">
         <div class="container">
             <div class="row tabsLinks root leagueMenu ">
                 <div class="logo col-md-4">
                     <a class="leagueTitle d-flex">
-                        <img src="https://img.btolat.com/tourlogo/fbe24ce8-0123-4de1-936c-bccd9516e16e.png"
-                            alt="دوري أبطال أفريقيا">
-                        <h1>دوري أبطال أفريقيا</h1>
+                        <img src="https://img.btolat.com/teamslogo/11938.png" alt="ميلان">
+                        <h1>ميلان</h1>
                     </a>
                 </div>
                 <div class="links col-md-8">
-                    <a href="league.php">الرئيسية</a>
-                    <a href="leagueVideos.php" class="active">فيديوهات</a>
-                    <a href="leagueMatches.php">مباريات</a>
-                    <a href="leagueTeams.php">ترتيب الفرق</a>
+                    <a href="team.php" class="active">الرئيسية</a>
+                    <a href="teamNews.php">اخر الأخبار</a>
+                    <a href="teamVideos.php">فيديوهات</a>
+                    <a href="teamMatches.php">مباريات</a>
+                    <a href="teamPlayers.php">قائمة اللاعبين</a>
                 </div>
             </div>
-
             <div class="row page-content mt-3 pages position-relative">
                 <div class="col-xl-8 right-side allNews overflow-auto">
                     <div class="container">
 
-                        <div class="videos p-4 bg-white">
-                            <div class="row px-2">
-                                <?php
-                                for ($i=1; $i <= 18; $i++) { 
-                                ?>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="card video">
-                                        <a href="video.php">
-                                            <div class="card-header position-relative p-0">
-                                                <img src="./assets/images/video1.jpg" alt="" class="card-img-top">
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <h3 class="card-title">
-                                                    ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي
-                                                </h3>
-                                            </div>
-                                            <span class="icon">
-                                                <img class="img-fluid" src="./assets/images/play-arrow.png"
-                                                    alt=" ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي">
-                                            </span>
-                                        </a>
-                                        <a href="#" class="categoryTag">الدوري المصري</a>
-                                    </div>
+                        <div class="teamCard">
+                            <div class="teamHead">
+                                <div class="pic">
+                                    <img src="https://img.btolat.com/teamslogo/11938.png" alt="ميلان">
                                 </div>
-                                <?php } ?>
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination p-0 mt-3 justify-content-center">
-                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                    </ul>
-                                </nav>
+                                <div class="details">
+                                    <h2>ميلان</h2>
+                                    <h3>البلد <span>إيطاليا</span></h3>
+                                    <h3>تاريخ التأسيس <span>1899</span></h3>
+                                    <h3>المدير الفني <span>S. Pioli</span></h3>
+                                    <h3>الملعب <span>Stadio Giuseppe Meazza</span></h3>
+                                </div>
+                            </div>
+
+                            <h2>البطولات التي يشارك فيها <span>ميلان</span></h2>
+                            <h3><a href="/league/1264/cup"><i class="fa fa-trophy"></i><span>كأس إيطاليا</span></a></h3>
+                            <h3><a href="/league/1269/serie-a"><i class="fa fa-trophy"></i><span>الدوري
+                                        الايطالي</span></a>
+                            </h3>
+                            <h3><a href="/league/1534/club-friendlies"><i class="fa fa-trophy"></i><span>مباريات ودية
+                                        أندية</span></a></h3>
+                            <h3><a href="/league/1005/champleague"><i class="fa fa-trophy"></i><span>دوري أبطال
+                                        أوروبا</span></a></h3>
+
+                        </div>
+                        <div class="row m-0 news pt-5">
+                            <?php
+                                for ($i=1; $i <= 6; $i++) { 
+                                ?>
+                            <div class="new col-sm-6 col-lg-4">
+                                <div class="card news">
+                                    <a href="singleNews.php">
+                                        <div class="card-header position-relative p-0">
+                                            <img src="./assets/images/medium.jpg" alt="yallagoal" class="card-img-top">
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <h3 class="card-title">
+                                                مرتضى منصور: تنبأت بخسارة الزمالك أمام إنبي.. ولن نلعب في استاد القاهرة
+                                                مرة
+                                                أخرى
+                                            </h3>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="categoryTag">الدوري المصري</a>
+                                    <div class="newsFooter"> <span class="time">منذ 11 ساعة </span> </div>
+                                </div>
+                            </div>
+                            <?php } ?>
+                            <div class="text-start mt-2 mb-3">
+                                <a href="news.php" class="btn btn-primary"> المزيد من الاخبار <svg
+                                        class="svg-inline--fa fa-angle-left" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="angle-left" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="row m-0 videos pt-5">
+                            <?php
+                                for ($i=1; $i <= 6; $i++) { 
+                                ?>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="card video">
+                                    <a href="#">
+                                        <div class="card-header position-relative p-0">
+                                            <img src="./assets/images/video1.jpg" alt="" class="card-img-top">
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <h3 class="card-title">
+                                                ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي
+                                            </h3>
+                                        </div>
+                                        <span class="icon">
+                                            <img class="img-fluid" src="./assets/images/play-arrow.png"
+                                                alt=" ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي">
+                                        </span>
+                                    </a>
+                                    <a href="#" class="categoryTag">الدوري المصري</a>
+                                </div>
+                            </div>
+                            <?php } ?>
+                            <div class="text-start mt-2 mb-3">
+                                <a href="news.php" class="btn btn-primary"> المزيد من الفيديوهات <svg
+                                        class="svg-inline--fa fa-angle-left" aria-hidden="true" focusable="false"
+                                        data-prefix="fas" data-icon="angle-left" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z">
+                                        </path>
+                                    </svg></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xl-4 d-none d-xl-block left-side">
-                    <div class="boxes">
+                    <div class="boxes pl-2">
                         <div class="box ads">
                             <img src="./assets/images/ads.jpg" alt="" class="img-fluid h-100">
                         </div>
@@ -649,7 +706,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

@@ -1,64 +1,61 @@
 <?php include 'layouts/header.php'; ?>
 <section>
-    <div class="league videos py-3">
+    <div class="league team py-3">
         <div class="container">
             <div class="row tabsLinks root leagueMenu ">
                 <div class="logo col-md-4">
                     <a class="leagueTitle d-flex">
-                        <img src="https://img.btolat.com/tourlogo/fbe24ce8-0123-4de1-936c-bccd9516e16e.png"
-                            alt="دوري أبطال أفريقيا">
+                        <img src="https://img.btolat.com/teamslogo/11938.png" alt="دوري أبطال أفريقيا">
                         <h1>دوري أبطال أفريقيا</h1>
                     </a>
                 </div>
                 <div class="links col-md-8">
-                    <a href="league.php">الرئيسية</a>
-                    <a href="leagueVideos.php" class="active">فيديوهات</a>
-                    <a href="leagueMatches.php">مباريات</a>
-                    <a href="leagueTeams.php">ترتيب الفرق</a>
+                    <a href="team.php">الرئيسية</a>
+                    <a href="teamNews.php" class="active">اخر الأخبار</a>
+                    <a href="teamVideos.php">فيديوهات</a>
+                    <a href="teamMatches.php">مباريات</a>
+                    <a href="teamPlayers.php">قائمة اللاعبين</a>
                 </div>
             </div>
-
             <div class="row page-content mt-3 pages position-relative">
                 <div class="col-xl-8 right-side allNews overflow-auto">
                     <div class="container">
 
-                        <div class="videos p-4 bg-white">
-                            <div class="row px-2">
-                                <?php
-                                for ($i=1; $i <= 18; $i++) { 
+                        <div class="row m-0 news pt-5">
+                            <?php
+                                for ($i=1; $i <= 15; $i++) { 
                                 ?>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="card video">
-                                        <a href="video.php">
-                                            <div class="card-header position-relative p-0">
-                                                <img src="./assets/images/video1.jpg" alt="" class="card-img-top">
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <h3 class="card-title">
-                                                    ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي
-                                                </h3>
-                                            </div>
-                                            <span class="icon">
-                                                <img class="img-fluid" src="./assets/images/play-arrow.png"
-                                                    alt=" ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي">
-                                            </span>
-                                        </a>
-                                        <a href="#" class="categoryTag">الدوري المصري</a>
-                                    </div>
+                            <div class="new col-sm-6 col-lg-4">
+                                <div class="card news">
+                                    <a href="singleNews.php">
+                                        <div class="card-header position-relative p-0">
+                                            <img src="./assets/images/medium.jpg" alt="yallagoal" class="card-img-top">
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <h3 class="card-title">
+                                                مرتضى منصور: تنبأت بخسارة الزمالك أمام إنبي.. ولن نلعب في استاد القاهرة
+                                                مرة
+                                                أخرى
+                                            </h3>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="categoryTag">الدوري المصري</a>
+                                    <div class="newsFooter"> <span class="time">منذ 11 ساعة </span> </div>
                                 </div>
-                                <?php } ?>
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination p-0 mt-3 justify-content-center">
-                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                    </ul>
-                                </nav>
                             </div>
+                            <?php } ?>
+                            <nav class="mb-3" aria-label="Page navigation">
+                                <ul class="pagination p-0 mt-3 justify-content-center">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="col-xl-4 d-none d-xl-block left-side">
@@ -649,7 +646,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

@@ -84,71 +84,77 @@
             <div class="container-fluid">
                 <div class="row page-content mt-3 pages position-relative">
                     <div class="col-xl-8 right-side allNews overflow-auto">
-                        <div class="rightBoxes" style="position: inherit; top: inherit;">
-                            <div class="row">
-                                <div class="col rshandler">
-                                    <div class="row tabsLinks shadow-sm bg-white">
-                                        <div class="col"><a href="matchDetails.php">معلومات</a>
-                                        </div>
-                                        <div class="col"><a href="matchDetailsLineup.php">التشكيل</a>
-                                        </div>
-                                        <div class="col"><a href="matchDetailsEvents.php">احداث</a></div>
-                                        <div class="col"><a href="matchDetailsStatistics.php">احصائيات</a></div>
-                                        <div class="col"><a class="active" href="matchDetailsNews.php">اخبار و فيديو</a>
-                                        </div>
-                                    </div>
-                                    <div class="row tabBody">
-                                        <div class="row m-0 news videos">
-                                            <?php
-                            for ($i=1; $i <= 3; $i++) { 
-                            ?>
-                                            <div class="col-sm-6 col-md-4">
-                                                <div class="card video">
-                                                    <a href="video.php">
-                                                        <div class="card-header position-relative p-0">
-                                                            <img src="./assets/images/video1.jpg" alt=""
-                                                                class="card-img-top">
-                                                        </div>
-                                                        <div class="card-body p-0">
-                                                            <h3 class="card-title">
-                                                                ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي
-                                                            </h3>
-                                                        </div>
-                                                        <span class="icon">
-                                                            <img class="img-fluid" src="./assets/images/play-arrow.png"
-                                                                alt=" ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي">
-                                                        </span>
-                                                    </a>
-                                                    <a href="#" class="categoryTag">الدوري المصري</a>
-                                                </div>
+                        <div class="container">
+
+                            <div class="rightBoxes" style="position: inherit; top: inherit;">
+                                <div class="row">
+                                    <div class="col rshandler">
+                                        <div class="row tabsLinks shadow-sm bg-white">
+                                            <div class="col"><a href="matchDetails.php">معلومات</a>
                                             </div>
-                                            <div class="new col-sm-6 col-lg-4">
-                                                <div class="card news">
-                                                    <a href="singleNews.php">
-                                                        <div class="card-header position-relative p-0">
-                                                            <img src="./assets/images/medium.jpg" alt="yallagoal"
-                                                                class="card-img-top">
-                                                        </div>
-                                                        <div class="card-body p-0">
-                                                            <h3 class="card-title">
-                                                                مرتضى منصور: تنبأت بخسارة الزمالك أمام إنبي.. ولن نلعب
-                                                                في استاد القاهرة مرة
-                                                                أخرى
-                                                            </h3>
-                                                        </div>
-                                                    </a>
-                                                    <a href="#" class="categoryTag">الدوري المصري</a>
-                                                    <div class="newsFooter"> <span class="time">منذ 11 ساعة </span>
+                                            <div class="col"><a href="matchDetailsLineup.php">التشكيل</a>
+                                            </div>
+                                            <div class="col"><a href="matchDetailsEvents.php">احداث</a></div>
+                                            <div class="col"><a href="matchDetailsStatistics.php">احصائيات</a></div>
+                                            <div class="col"><a class="active" href="matchDetailsNews.php">اخبار و
+                                                    فيديو</a>
+                                            </div>
+                                        </div>
+                                        <div class="row tabBody">
+                                            <div class="row m-0 news videos">
+                                                <?php
+                                for ($i=1; $i <= 3; $i++) { 
+                                ?>
+                                                <div class="col-sm-6 col-md-4">
+                                                    <div class="card video">
+                                                        <a href="video.php">
+                                                            <div class="card-header position-relative p-0">
+                                                                <img src="./assets/images/video1.jpg" alt=""
+                                                                    class="card-img-top">
+                                                            </div>
+                                                            <div class="card-body p-0">
+                                                                <h3 class="card-title">
+                                                                    ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي
+                                                                </h3>
+                                                            </div>
+                                                            <span class="icon">
+                                                                <img class="img-fluid"
+                                                                    src="./assets/images/play-arrow.png"
+                                                                    alt=" ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي">
+                                                            </span>
+                                                        </a>
+                                                        <a href="#" class="categoryTag">الدوري المصري</a>
                                                     </div>
                                                 </div>
+                                                <div class="new col-sm-6 col-lg-4">
+                                                    <div class="card news">
+                                                        <a href="singleNews.php">
+                                                            <div class="card-header position-relative p-0">
+                                                                <img src="./assets/images/medium.jpg" alt="yallagoal"
+                                                                    class="card-img-top">
+                                                            </div>
+                                                            <div class="card-body p-0">
+                                                                <h3 class="card-title">
+                                                                    مرتضى منصور: تنبأت بخسارة الزمالك أمام إنبي.. ولن
+                                                                    نلعب
+                                                                    في استاد القاهرة مرة
+                                                                    أخرى
+                                                                </h3>
+                                                            </div>
+                                                        </a>
+                                                        <a href="#" class="categoryTag">الدوري المصري</a>
+                                                        <div class="newsFooter"> <span class="time">منذ 11 ساعة </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <?php } ?>
                                             </div>
-                                            <?php } ?>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="box fbComm bg-white">
-                                    <h2 class="title text-end">التعليقات</h2>
-                                    <?php include './comments.php'; ?>
+                                    <div class="box fbComm bg-white">
+                                        <h2 class="title text-end">التعليقات</h2>
+                                        <?php include './comments.php'; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>

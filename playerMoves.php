@@ -1,68 +1,81 @@
 <?php include 'layouts/header.php'; ?>
 <section>
-    <div class="league videos py-3">
+    <div class="league team py-3">
         <div class="container">
             <div class="row tabsLinks root leagueMenu ">
                 <div class="logo col-md-4">
                     <a class="leagueTitle d-flex">
-                        <img src="https://img.btolat.com/tourlogo/fbe24ce8-0123-4de1-936c-bccd9516e16e.png"
-                            alt="دوري أبطال أفريقيا">
-                        <h1>دوري أبطال أفريقيا</h1>
+                        <img src="https://img.btolat.com/" alt="ميلان">
+                        <h1>معلومات محمود الغرباوي
+                        </h1>
                     </a>
                 </div>
                 <div class="links col-md-8">
-                    <a href="league.php">الرئيسية</a>
-                    <a href="leagueVideos.php" class="active">فيديوهات</a>
-                    <a href="leagueMatches.php">مباريات</a>
-                    <a href="leagueTeams.php">ترتيب الفرق</a>
+                    <a href="player.php">معلومات</a>
+                    <a href="playerNews.php">اخر الأخبار</a>
+                    <a href="playerVideos.php">فيديوهات</a>
+                    <a href="playerMoves.php" class="active">الانتقالات</a>
+                    <a href="playerGoals.php">الأهداف</a>
                 </div>
             </div>
-
             <div class="row page-content mt-3 pages position-relative">
                 <div class="col-xl-8 right-side allNews overflow-auto">
                     <div class="container">
+                        <div class="playerTransfers">
+                            <div class="playerTransfer d-flex justify-content-between flex-wrap">
+                                <div class="transfer text-center text-md-end">
+                                    <i class="fa fa-share fa-rotate-180"></i>
+                                    <p>قادم من</p>
+                                    <a href="/team/15003/اتحاد-جدة">
+                                        <img src="https://img.btolat.com/teamslogo/15003.png " alt="اتحاد جدة ">
 
-                        <div class="videos p-4 bg-white">
-                            <div class="row px-2">
-                                <?php
-                                for ($i=1; $i <= 18; $i++) { 
-                                ?>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="card video">
-                                        <a href="video.php">
-                                            <div class="card-header position-relative p-0">
-                                                <img src="./assets/images/video1.jpg" alt="" class="card-img-top">
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <h3 class="card-title">
-                                                    ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي
-                                                </h3>
-                                            </div>
-                                            <span class="icon">
-                                                <img class="img-fluid" src="./assets/images/play-arrow.png"
-                                                    alt=" ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي">
-                                            </span>
-                                        </a>
-                                        <a href="#" class="categoryTag">الدوري المصري</a>
-                                    </div>
+                                        <span>اتحاد جدة </span></a>
+                                    <p>ذاهب الى</p>
+                                    <a href="/team/8902/الجونة">
+                                        <img src="https://img.btolat.com/teamslogo/8902.png "
+                                            class="img-responsive lazy" alt="الجونة ">
+
+                                        <span>الجونة </span></a>
                                 </div>
-                                <?php } ?>
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination p-0 mt-3 justify-content-center">
-                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                <div class="transferInfo">
+                                    <ul>
+                                        <li>تاريخ الصفقة<span>01-01-2019</span></li>
+                                        <li>القيمة المالية<span>N/A</span></li>
+                                        <li>نوع الصفقة<span>بيع</span></li>
                                     </ul>
-                                </nav>
+                                </div>
                             </div>
+                            <div class="playerTransfer  d-flex justify-content-between flex-wrap">
+                                <div class="transfer">
+                                    <i class="fa fa-share fa-rotate-180"></i>
+                                    <p>قادم من</p>
+                                    <a href="/team/8899/الداخلية">
+                                        <img src="https://img.btolat.com/teamslogo/8899.png " alt="الداخلية ">
+
+                                        <span>الداخلية </span></a>
+                                    <p>ذاهب الى</p>
+                                    <a href="/team/15003/اتحاد-جدة">
+                                        <img src="https://img.btolat.com/teamslogo/15003.png "
+                                            class="img-responsive lazy" alt="اتحاد جدة ">
+
+                                        <span>اتحاد جدة </span></a>
+                                </div>
+                                <div class="transferInfo">
+                                    <ul>
+                                        <li>تاريخ الصفقة<span>01-07-2018</span></li>
+                                        <li>القيمة المالية<span>Free</span></li>
+                                        <li>نوع الصفقة<span>ــ</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xl-4 d-none d-xl-block left-side">
-                    <div class="boxes">
+                    <div class="boxes pl-2">
                         <div class="box ads">
                             <img src="./assets/images/ads.jpg" alt="" class="img-fluid h-100">
                         </div>
@@ -649,7 +662,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

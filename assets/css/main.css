@@ -11,6 +11,9 @@ body {
   font-family: 'Cairo', sans-serif;
   background-color: #f5f5f5;
 }
+ul{
+  list-style: none;
+}
 
 a{
   text-decoration: none;
@@ -26,6 +29,9 @@ a{
   margin-inline-end: 15px;
   overflow: hidden;
 
+}
+.container{
+  overflow: hidden;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   font-size: 18px;
@@ -219,6 +225,7 @@ span.sp3 {
 .intro  .matchCenter .box{
   margin-top: 0 !important;
 height: 100%;
+padding-right: 10px;
 
 }
 @media(max-width:1200px){
@@ -421,6 +428,11 @@ h2.title::before{
 }
 .videos .card{
   margin-bottom: 10px;
+}
+
+.videos .row >div,
+.allNews  .row .new{
+  padding: 0 5px !important;
 }
 
 .videos .card a{
@@ -1146,7 +1158,6 @@ ul{
   position: relative;
   display: block;
   margin: 15px 0;
-  width: calc(100% - 15px) !important;
   padding: 15px;
 }
 
@@ -1319,6 +1330,8 @@ ul{
   width: 25%;
   text-align: center;
   margin-top: 7px;
+  display: flex;
+    flex-direction: column;
 }
 
 #fullMatchCenterTable .matchBox .teams .stat {
@@ -1506,7 +1519,6 @@ background-color: #fff;
 }
 
 @media (min-width:576px){
-
   .league .page-content .allNews .new{
     padding: 0 0 0 15px !important;
   }
@@ -1538,7 +1550,12 @@ background-color: #fff;
   padding: 5px;
   text-align: center;
 }
-.league .page-content .leagueTable td {
+.page-content .leagueTable td {
+  padding: 5px;
+  text-align: center;
+}
+
+.page-content .leagueTable td .color{
   padding: 5px;
   text-align: center;
 }
@@ -1562,13 +1579,13 @@ background-color: #fff;
   height: 600px !important;
 }
 .league .boxes{
-  position: relative !important;
-  top: unset !important;
+  padding-left: 10px;
   /* margin-bottom: 15px; */
 }
 
 .league .intro .matchCenter {
   max-height: 473px !important;
+
 }
 .league .videos .card .card-img-top{
   height: 180px !important;
@@ -1578,6 +1595,7 @@ background-color: #fff;
 
   height: 295px !important;
   margin-top: 0;
+  padding-right: 10px;
 }
 
 /* league single page */
@@ -1626,18 +1644,18 @@ background-color: #fff;
   margin: 0;
 }
 
-.league.matches .matchDate h4 {
+.matchDate h4 {
   text-align: center;
   font-size: 14px;
   margin-top: 15px;
   font-weight: 700;
 }
 
-.league.matches .fullMatchBox .matchBox .teams{
+.fullMatchBox .matchBox .teams{
   display: flex;
   justify-content: space-between;
 }
-.league.matches .fullMatchBox .matchBox .teams .stat .results{
+.fullMatchBox .matchBox .teams .stat .results{
 position: absolute;
 display: flex;
 width: 100%;
@@ -2200,7 +2218,7 @@ justify-content: space-between;
   float: none;
   min-height: 700px;
 }
-.card.format .row > div{
+ .row > div{
   padding: 0 !important;
 }
 
@@ -2268,10 +2286,296 @@ justify-content: space-between;
   display: inline-block;
 }
 
-
-
 /* match details */
 
+/* Team pages */
+
+.team .teamCard {
+  background: #fff;
+  padding: 0 0 15px 0;
+}
+
+@media (min-width: 1024px){
+
+ .team .right-side>div:first-child {
+      margin: 0;
+      margin-top: 15px;
+      text-align: right;
+  }
+}
+
+.teamCard .teamHead {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  min-height: 195px;
+  direction: rtl;
+  text-align: right;
+  background: #222 url(../images/stats-card2.png) no-repeat top right;
+}
+
+.teamCard .teamHead .pic {
+  float: right;
+  width: 250px;
+  height: 160px;
+  text-align: center;
+  padding: 10px;
+}
+.teamCard .teamHead .pic img {
+  max-width: 300px;
+  height: 100%;
+}
+
+.teamCard .teamHead .details {
+  float: right;
+  padding: 1px 20px 0 10px;
+  color: #ccc;
+  border-right: 1px solid #555;
+}
+
+.teamCard .teamHead .details h2 {
+  font: 600 32px/21px 'cairo';
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  padding: 0;
+  color: #fff;
+}
+
+.teamCard .teamHead .details h3 {
+  font: 400 18px/21px 'cairo';
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.teamCard .teamHead .details h3 span {
+  color: #fff;
+  margin-right: 5px;
+}
+.teamCard h2 {
+  font: 600 32px/35px 'cairo';
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  padding-right: 15px;
+  padding-top: 15px;
+  text-align: right;
+}
+
+.teamCard h3 {
+  text-align: right;
+  font: 400 18px/21px 'cairo';
+  margin-bottom: 12px;
+  padding-right: 15px;
+}
+.teamCard a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.teamCard h3 .fa-trophy {
+  color: #e88302;
+  margin-left: 10px;
+}
+
+@media (min-width: 1024px){
+
+  .rightBoxes>div:first-child {
+      margin: 0;
+      margin-top: 15px;
+      text-align: right;
+  }
+}
+.leagueFixtures {
+  width: calc(100% - 15px);
+}
+
+.tabyBox {
+  background: #fefefe;
+}
+
+a.taby {
+  color: #333;
+  text-decoration: none;
+  background: #e8e8e8;
+  padding: 10px;
+}
+a.taby.active p {
+  background: #e88302;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+}
+a.taby p {
+  margin: 0 0;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+  background: #d5d5d5;
+  text-align: center;
+}
+
+#fullMatchCenterTable .matchCenterBox.light .nav-tabs select.nav-item.team {
+  padding: 5px 0 !important;
+}
+
+.leagueTable.displayAll tbody td:first-child {
+  text-align: right !important;
+}
+
+.leagueFixtures #nav-tab {
+  padding: 10px;
+  height: auto !important;
+  margin: 15px 0 0 0 !important;
+}
+.matchCenterBox.light .nav-tabs {
+  background: #ddd;
+  border-bottom-color: #f5f5f5;
+}
+/* Team pages */
+
+
+/* Player page */
+
+.playerCard {
+  color: #333;
+  background: #fff url("./assets/images/stats-card.png") no-repeat top right;
+  padding: 15px;
+  min-height: 250px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  direction: rtl;
+  text-align: right;
+}
+.playerCard .image .playerImage {
+  background: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: table;
+  overflow: hidden;
+}
+
+.playerCard .image .playerImage img {
+  vertical-align: bottom;
+  border-radius: 50%;
+}
+.playerCard .info {
+  padding: 0;
+  padding-right: 15px;
+  margin-top: 15px;
+}
+.playerCard .info p strong {
+  font-size: 13px;
+  line-height: 20px;
+}
+.playerCard .info p span {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.playerCard .info ul li {
+  font-size: 14px;
+  display: inline-block;
+  width: 100%;
+  padding: 7px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.playerCard .info ul li span {
+  margin-right: 8px;
+  font-weight: 700;
+  width: 50%;
+  display: inline-block;
+  float: left;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+
+.playerTransfers .playerTransfer {
+  padding: 15px;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+.playerTransfers .playerTransfer .transfer {
+  margin: 0;
+  background: #fff;
+  height: auto;
+  padding: 15px;
+  padding-right: 40px;
+  position: relative;
+}
+.playerTransfers .playerTransfer .transfer .fa-share {
+  color: #65b70e;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  font-size: 20px;
+}
+.playerTransfers .playerTransfer .transfer p:first-of-type {
+  margin-top: 0;
+}
+
+.playerTransfers .playerTransfer .transfer p {
+  margin: 15px 0 3px;
+}
+.transfer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.playerTransfers .playerTransfer .transfer a {
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+}
+.playerTransfers .playerTransfer .transfer a img {
+  width: 20px;
+  height: 20px;
+}
+
+.playerTransfers .playerTransfer .transfer a span {
+  margin-right: 10px;
+}
+
+.playerTransfers .playerTransfer .transferInfo {
+  margin: 0;
+  background: #fff;
+  height: auto;
+  padding: 15px;
+  position: relative;
+  border-right: 1px solid #ddd;
+}
+.playerTransfers .playerTransfer .transfer,
+.playerTransfers .playerTransfer .transferInfo{
+  width:100%;
+}
+@media (min-width:768px){
+  .playerTransfers .playerTransfer .transfer,
+.playerTransfers .playerTransfer .transferInfo{
+  width: 50%;
+}
+}
+
+.playerTransfers .playerTransfer .transferInfo ul li {
+  padding: 7px;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  width: 100%;
+}
+
+.playerTransfers .playerTransfer .transferInfo ul li span {
+  float: left;
+  width: 60%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Player page */
 
 .footer {
   background-color: var(--main-color-alt);

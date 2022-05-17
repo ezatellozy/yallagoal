@@ -1,62 +1,70 @@
 <?php include 'layouts/header.php'; ?>
 <section>
-    <div class="league videos py-3">
+    <div class="league team py-3">
         <div class="container">
             <div class="row tabsLinks root leagueMenu ">
                 <div class="logo col-md-4">
                     <a class="leagueTitle d-flex">
-                        <img src="https://img.btolat.com/tourlogo/fbe24ce8-0123-4de1-936c-bccd9516e16e.png"
-                            alt="دوري أبطال أفريقيا">
+                        <img src="https://img.btolat.com/teamslogo/11938.png" alt="دوري أبطال أفريقيا">
                         <h1>دوري أبطال أفريقيا</h1>
                     </a>
                 </div>
                 <div class="links col-md-8">
-                    <a href="league.php">الرئيسية</a>
-                    <a href="leagueVideos.php" class="active">فيديوهات</a>
-                    <a href="leagueMatches.php">مباريات</a>
-                    <a href="leagueTeams.php">ترتيب الفرق</a>
+                    <a href="team.php">الرئيسية</a>
+                    <a href="teamNews.php">اخر الأخبار</a>
+                    <a href="teamVideos.php">فيديوهات</a>
+                    <a href="teamMatches.php">مباريات</a>
+                    <a href="teamPlayers.php" class="active">قائمة اللاعبين</a>
                 </div>
             </div>
-
             <div class="row page-content mt-3 pages position-relative">
                 <div class="col-xl-8 right-side allNews overflow-auto">
                     <div class="container">
 
-                        <div class="videos p-4 bg-white">
-                            <div class="row px-2">
-                                <?php
-                                for ($i=1; $i <= 18; $i++) { 
+                        <div class="card active" itemtype="https://schema.org/SportsOrganization">
+
+                            <table style="width:100%" class="leagueTable displayAll">
+                                <thead>
+                                    <tr>
+                                        <th colspan="5" class="groupTitle">الاسم</th>
+                                        <th>المركز</th>
+                                        <th>الجنسيه</th>
+                                        <th>تاريخ الميلاد</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                for ($i=1; $i <= 10; $i++) { 
                                 ?>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="card video">
-                                        <a href="video.php">
-                                            <div class="card-header position-relative p-0">
-                                                <img src="./assets/images/video1.jpg" alt="" class="card-img-top">
-                                            </div>
-                                            <div class="card-body p-0">
-                                                <h3 class="card-title">
-                                                    ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي
-                                                </h3>
-                                            </div>
-                                            <span class="icon">
-                                                <img class="img-fluid" src="./assets/images/play-arrow.png"
-                                                    alt=" ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي">
-                                            </span>
-                                        </a>
-                                        <a href="#" class="categoryTag">الدوري المصري</a>
-                                    </div>
-                                </div>
-                                <?php } ?>
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination p-0 mt-3 justify-content-center">
-                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
+                                    <tr class="">
+                                        <td colspan="5">
+                                            <b>
+                                                <a href="player.php">
+                                                    <img src="https://img.btolat.com/playerslogo/19741.png"
+                                                        alt="كيبريان تاتاروسانو" class="img-responsive lazy">
+                                                    كيبريان تاتاروسانو
+                                                </a>
+
+
+                                            </b>
+                                        </td>
+                                        <td>
+                                            <div class="color"><span>حارس مرمى</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="color"><span>رومانيا</span></div>
+                                        </td>
+                                        <td>
+                                            <div class="color"><span>09/02/1986</span></div>
+                                        </td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+
+                                <tfoot>
+                                </tfoot>
+
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -649,7 +657,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

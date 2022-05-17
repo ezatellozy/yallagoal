@@ -84,152 +84,156 @@
             <div class="container-fluid">
                 <div class="row page-content mt-3 pages position-relative">
                     <div class="col-xl-8 right-side allNews overflow-auto">
-                        <div class="rightBoxes" style="position: inherit; top: inherit;">
-                            <div class="row">
-                                <div class="col rshandler">
-                                    <div class="row tabsLinks shadow-sm bg-white">
-                                        <div class="col"><a href="matchDetails.php">معلومات</a>
+                        <div class="container">
+
+                            <div class="rightBoxes" style="position: inherit; top: inherit;">
+                                <div class="row">
+                                    <div class="col rshandler">
+                                        <div class="row tabsLinks shadow-sm bg-white">
+                                            <div class="col"><a href="matchDetails.php">معلومات</a>
+                                            </div>
+                                            <div class="col"><a href="matchDetailsLineup.php">التشكيل</a></div>
+                                            <div class="col"><a class="active" href="matchDetailsEvents.php">احداث</a>
+                                            </div>
+                                            <div class="col"><a href="matchDetailsStatistics.php">احصائيات</a></div>
+                                            <div class="col"><a href="matchDetailsNews.php">اخبار و فيديو</a></div>
                                         </div>
-                                        <div class="col"><a href="matchDetailsLineup.php">التشكيل</a></div>
-                                        <div class="col"><a class="active" href="matchDetailsEvents.php">احداث</a></div>
-                                        <div class="col"><a href="matchDetailsStatistics.php">احصائيات</a></div>
-                                        <div class="col"><a href="matchDetailsNews.php">اخبار و فيديو</a></div>
-                                    </div>
-                                    <div class="row tabBody">
+                                        <div class="row tabBody">
 
-                                        <div class="col">
-                                            <div class="container">
+                                            <div class="col">
+                                                <div class="container">
 
-                                                <div class="card">
-                                                    <section class="timeline">
-                                                        <ul>
-                                                            <li class="titleTL in-view">بداية المباراة</li>
-                                                            <li class="rightTL in-view">
-                                                                <div>
-                                                                    <time>13 '</time>
-                                                                    <img src="https://static.btolat.com/images/goal.png"
-                                                                        alt="باهر المحمدي">
-                                                                    <b>باهر المحمدي</b>
+                                                    <div class="card">
+                                                        <section class="timeline">
+                                                            <ul>
+                                                                <li class="titleTL in-view">بداية المباراة</li>
+                                                                <li class="rightTL in-view">
+                                                                    <div>
+                                                                        <time>13 '</time>
+                                                                        <img src="https://static.btolat.com/images/goal.png"
+                                                                            alt="باهر المحمدي">
+                                                                        <b>باهر المحمدي</b>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="titleTL in-view">استراحة</li>
-                                                            <li class="rightTL in-view">
-                                                                <div>
-                                                                    <time>50 '</time>
-                                                                    <img src="https://static.btolat.com/images/yellowcard.png"
-                                                                        alt="باهر المحمدي">
-                                                                    <b>باهر المحمدي</b>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="titleTL in-view">استراحة</li>
+                                                                <li class="rightTL in-view">
+                                                                    <div>
+                                                                        <time>50 '</time>
+                                                                        <img src="https://static.btolat.com/images/yellowcard.png"
+                                                                            alt="باهر المحمدي">
+                                                                        <b>باهر المحمدي</b>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="rightTL in-view">
-                                                                <div>
-                                                                    <time>77 '</time>
-                                                                    <img src="https://static.btolat.com/images/goal.png"
-                                                                        alt="عبد الرحمن مجدي">
-                                                                    <b>عبد الرحمن مجدي</b>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="rightTL in-view">
+                                                                    <div>
+                                                                        <time>77 '</time>
+                                                                        <img src="https://static.btolat.com/images/goal.png"
+                                                                            alt="عبد الرحمن مجدي">
+                                                                        <b>عبد الرحمن مجدي</b>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="leftTL in-view">
-                                                                <div>
-                                                                    <time>86 '</time>
-                                                                    <img src="https://static.btolat.com/images/yellowcard.png"
-                                                                        alt="محمود البدري">
-                                                                    <b>محمود البدري</b>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="leftTL in-view">
+                                                                    <div>
+                                                                        <time>86 '</time>
+                                                                        <img src="https://static.btolat.com/images/yellowcard.png"
+                                                                            alt="محمود البدري">
+                                                                        <b>محمود البدري</b>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="rightTL in-view">
-                                                                <div>
-                                                                    <time>88 '</time>
-                                                                    <img src="https://static.btolat.com/images/subst.png"
-                                                                        alt="محمد مخلوف">
-                                                                    <b>محمد مخلوف</b>
-                                                                    <span>احمد مدبولي</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="rightTL in-view">
+                                                                    <div>
+                                                                        <time>88 '</time>
+                                                                        <img src="https://static.btolat.com/images/subst.png"
+                                                                            alt="محمد مخلوف">
+                                                                        <b>محمد مخلوف</b>
+                                                                        <span>احمد مدبولي</span>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="leftTL in-view">
-                                                                <div>
-                                                                    <time>86 '</time>
-                                                                    <img src="https://static.btolat.com/images/yellowcard.png"
-                                                                        alt="محمود البدري">
-                                                                    <b>محمود البدري</b>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="leftTL in-view">
+                                                                    <div>
+                                                                        <time>86 '</time>
+                                                                        <img src="https://static.btolat.com/images/yellowcard.png"
+                                                                            alt="محمود البدري">
+                                                                        <b>محمود البدري</b>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="leftTL in-view">
-                                                                <div>
-                                                                    <time>82 '</time>
-                                                                    <img src="https://static.btolat.com/images/subst.png"
-                                                                        alt="Hamza Magdi">
-                                                                    <b>Hamza Magdi</b>
-                                                                    <span>باسم مرسي</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="leftTL in-view">
+                                                                    <div>
+                                                                        <time>82 '</time>
+                                                                        <img src="https://static.btolat.com/images/subst.png"
+                                                                            alt="Hamza Magdi">
+                                                                        <b>Hamza Magdi</b>
+                                                                        <span>باسم مرسي</span>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="leftTL in-view">
-                                                                <div>
-                                                                    <time>82 '</time>
-                                                                    <img src="https://static.btolat.com/images/subst.png"
-                                                                        alt="بلال صيداني">
-                                                                    <b>بلال صيداني</b>
-                                                                    <span>Mahmoud Nabil</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="leftTL in-view">
+                                                                    <div>
+                                                                        <time>82 '</time>
+                                                                        <img src="https://static.btolat.com/images/subst.png"
+                                                                            alt="بلال صيداني">
+                                                                        <b>بلال صيداني</b>
+                                                                        <span>Mahmoud Nabil</span>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="rightTL in-view">
-                                                                <div>
-                                                                    <time>76 '</time>
-                                                                    <img src="https://static.btolat.com/images/goal.png"
-                                                                        alt="عبد الرحمن مجدي">
-                                                                    <b>عبد الرحمن مجدي</b>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="rightTL in-view">
+                                                                    <div>
+                                                                        <time>76 '</time>
+                                                                        <img src="https://static.btolat.com/images/goal.png"
+                                                                            alt="عبد الرحمن مجدي">
+                                                                        <b>عبد الرحمن مجدي</b>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="leftTL in-view">
-                                                                <div>
-                                                                    <time>72 '</time>
-                                                                    <img src="https://static.btolat.com/images/subst.png"
-                                                                        alt="وينقول كوبيناه">
-                                                                    <b>وينقول كوبيناه</b>
-                                                                    <span></span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="leftTL in-view">
+                                                                    <div>
+                                                                        <time>72 '</time>
+                                                                        <img src="https://static.btolat.com/images/subst.png"
+                                                                            alt="وينقول كوبيناه">
+                                                                        <b>وينقول كوبيناه</b>
+                                                                        <span></span>
 
-                                                                </div>
-                                                            </li>
-                                                            <li class="leftTL in-view">
-                                                                <div>
-                                                                    <time>71 '</time>
-                                                                    <img src="https://static.btolat.com/images/subst.png"
-                                                                        alt="Mostafa Saad">
-                                                                    <b>Mostafa Saad</b>
-                                                                    <span>شريف دابو</span>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="leftTL in-view">
+                                                                    <div>
+                                                                        <time>71 '</time>
+                                                                        <img src="https://static.btolat.com/images/subst.png"
+                                                                            alt="Mostafa Saad">
+                                                                        <b>Mostafa Saad</b>
+                                                                        <span>شريف دابو</span>
 
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </section>
-                                                </div>
-                                                <div class="col">
-                                                    <br>
-                                                    <hr>
-                                                    <div class="col">
-                                                        <ul class="matchtags">
-                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </section>
                                                     </div>
+                                                    <div class="col">
+                                                        <br>
+                                                        <hr>
+                                                        <div class="col">
+                                                            <ul class="matchtags">
+                                                            </ul>
+                                                        </div>
 
-                                                    <br>
+                                                        <br>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box fbComm bg-white">
-                                    <h2 class="title text-end">التعليقات</h2>
-                                    <?php include './comments.php'; ?>
+                                    <div class="box fbComm bg-white">
+                                        <h2 class="title text-end">التعليقات</h2>
+                                        <?php include './comments.php'; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>

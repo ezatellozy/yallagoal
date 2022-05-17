@@ -1,61 +1,140 @@
 <?php include 'layouts/header.php'; ?>
 <section>
-    <div class="league videos py-3">
+    <div class="league team py-3">
         <div class="container">
             <div class="row tabsLinks root leagueMenu ">
                 <div class="logo col-md-4">
                     <a class="leagueTitle d-flex">
-                        <img src="https://img.btolat.com/tourlogo/fbe24ce8-0123-4de1-936c-bccd9516e16e.png"
-                            alt="دوري أبطال أفريقيا">
+                        <img src="https://img.btolat.com/teamslogo/11938.png" alt="دوري أبطال أفريقيا">
                         <h1>دوري أبطال أفريقيا</h1>
                     </a>
                 </div>
                 <div class="links col-md-8">
-                    <a href="league.php">الرئيسية</a>
-                    <a href="leagueVideos.php" class="active">فيديوهات</a>
-                    <a href="leagueMatches.php">مباريات</a>
-                    <a href="leagueTeams.php">ترتيب الفرق</a>
+                    <a href="team.php">الرئيسية</a>
+                    <a href="teamNews.php">اخر الأخبار</a>
+                    <a href="teamVideos.php">فيديوهات</a>
+                    <a href="teamMatches.php" class="active">مباريات</a>
+                    <a href="teamPlayers.php">قائمة اللاعبين</a>
                 </div>
             </div>
-
             <div class="row page-content mt-3 pages position-relative">
                 <div class="col-xl-8 right-side allNews overflow-auto">
                     <div class="container">
 
-                        <div class="videos p-4 bg-white">
-                            <div class="row px-2">
-                                <?php
-                                for ($i=1; $i <= 18; $i++) { 
-                                ?>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="card video">
-                                        <a href="video.php">
-                                            <div class="card-header position-relative p-0">
-                                                <img src="./assets/images/video1.jpg" alt="" class="card-img-top">
+                        <div class="leagueFixtures">
+                            <div id="fullMatchCenterTable">
+                                <div class="cardBox">
+                                    <div class="matchCenterBox light full">
+                                        <div class="matchtableX tabyBox" data-leg-name="ael">
+                                            <div class="row w-100 m-0">
+                                                <a class="col taby active" href="#">
+                                                    <p>المبارايات السابقة</p>
+                                                </a>
+                                                <a class="col taby" href="#">
+                                                    <p>المبارايات التالية</p>
+                                                </a>
                                             </div>
-                                            <div class="card-body p-0">
-                                                <h3 class="card-title">
-                                                    ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي
-                                                </h3>
+                                            <div class="matchDate">
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <div class="col"></div>
+                                                    <select class="col nav-item nav-link x team" name="selectLeg"
+                                                        id="selectLeg">
+                                                        <option value="0">كل البطولات </option>
+                                                        <option value="leagueid=1269">
+                                                            الدوري الايطالي
+                                                        </option>
+                                                        <option value="leagueid=1264">
+                                                            كأس إيطاليا
+                                                        </option>
+                                                        <option value="leagueid=1005">
+                                                            دوري أبطال أوروبا
+                                                        </option>
+                                                        <option value="leagueid=1534">
+                                                            مباريات ودية أندية
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="matchtableX">
+                                                    <div class="matchDate">
+                                                        <ul>
+                                                            <li class="">
+                                                                <h4>الدوري الايطالي</h4>
+                                                            </li>
+                                                            <li id="3017092" class="fullMatchBox ended"
+                                                                data-stat="ended">
+                                                                <div class="matchBox">
+                                                                    <div class="teams">
+                                                                        <a class="team1" href="/team/11938/milan">
+                                                                            <span><img
+                                                                                    src="https://img.btolat.com/teamslogo/11938.png"
+                                                                                    alt="ميلان" title="ميلان"></span>
+                                                                            <span class="teamName">ميلان</span>
+                                                                        </a>
+                                                                        <a class="stat" href="/matches/details/3017092">
+
+                                                                            <div class="status"><span>انتهت</span></div>
+                                                                            <div id="reslt3017092" class="results ">
+                                                                                <div class="team1G">2 </div>
+                                                                                <div class="team2G">0 </div>
+                                                                            </div>
+                                                                            <span class="matchDate"
+                                                                                style="font-size:13px">
+                                                                                <span> 15.05.2022 <br> 06:00 م</span>
+                                                                            </span>
+
+                                                                        </a>
+
+                                                                        <a class="team2" href="/team/11811/atalanta">
+                                                                            <span><img
+                                                                                    src="https://img.btolat.com/teamslogo/11811.png"
+                                                                                    alt="أتالانتا"
+                                                                                    title="أتالانتا"></span>
+                                                                            <span class="teamName">أتالانتا</span>
+                                                                        </a>
+
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                            <li id="3017103" class="fullMatchBox notYet"
+                                                                data-stat="notYet">
+                                                                <div class="matchBox">
+                                                                    <div class="teams">
+                                                                        <a class="team1" href="/team/12013/sassuolo">
+                                                                            <span><img
+                                                                                    src="https://img.btolat.com/teamslogo/12013.png"
+                                                                                    alt="ساسولو" title="ساسولو"></span>
+                                                                            <span class="teamName">ساسولو</span>
+                                                                        </a>
+                                                                        <a class="stat" href="/matches/details/3017103">
+                                                                            <div id="reslt3017103" class="results">
+                                                                                <div class="team1G"> </div>
+                                                                                <div class="team2G"> </div>
+                                                                            </div>
+                                                                            <span class="matchDate"
+                                                                                style="font-size:13px">
+                                                                                <span> 22.05.2022 <br> 06:00 م</span>
+                                                                            </span>
+                                                                        </a>
+                                                                        <a class="team2" href="/team/11938/milan">
+                                                                            <span><img
+                                                                                    src="https://img.btolat.com/teamslogo/11938.png"
+                                                                                    alt="ميلان" title="ميلان"></span>
+                                                                            <span class="teamName">ميلان</span>
+                                                                        </a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <span class="icon">
-                                                <img class="img-fluid" src="./assets/images/play-arrow.png"
-                                                    alt=" ملخص مباراة ليفربول واستون فيلا 2 1 الدوري الانجليزي">
-                                            </span>
-                                        </a>
-                                        <a href="#" class="categoryTag">الدوري المصري</a>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <?php } ?>
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination p-0 mt-3 justify-content-center">
-                                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                    </ul>
-                                </nav>
                             </div>
                         </div>
                     </div>
@@ -649,7 +728,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>

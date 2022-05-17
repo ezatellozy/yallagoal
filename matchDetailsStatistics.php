@@ -84,25 +84,28 @@
             <div class="container-fluid">
                 <div class="row page-content mt-3 pages position-relative">
                     <div class="col-xl-8 right-side allNews overflow-auto">
-                        <div class="rightBoxes" style="position: inherit; top: inherit;">
-                            <div class="row">
-                                <div class="col rshandler">
-                                    <div class="row tabsLinks shadow-sm bg-white">
-                                        <div class="col"><a href="matchDetails.php">معلومات</a>
-                                        </div>
-                                        <div class="col"><a href="matchDetailsLineup.php">التشكيل</a></div>
-                                        <div class="col"><a href="matchDetailsEvents.php">احداث</a></div>
-                                        <div class="col"><a class="active"
-                                                href="matchDetailsStatistics.php">احصائيات</a></div>
-                                        <div class="col"><a href="matchDetailsNews.php">اخبار و فيديو</a></div>
-                                    </div>
-                                    <div class="row tabBody">
+                        <div class="container">
 
+                            <div class="rightBoxes" style="position: inherit; top: inherit;">
+                                <div class="row">
+                                    <div class="col rshandler">
+                                        <div class="row tabsLinks shadow-sm bg-white">
+                                            <div class="col"><a href="matchDetails.php">معلومات</a>
+                                            </div>
+                                            <div class="col"><a href="matchDetailsLineup.php">التشكيل</a></div>
+                                            <div class="col"><a href="matchDetailsEvents.php">احداث</a></div>
+                                            <div class="col"><a class="active"
+                                                    href="matchDetailsStatistics.php">احصائيات</a></div>
+                                            <div class="col"><a href="matchDetailsNews.php">اخبار و فيديو</a></div>
+                                        </div>
+                                        <div class="row tabBody">
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="box fbComm bg-white">
-                                    <h2 class="title text-end">التعليقات</h2>
-                                    <?php include './comments.php'; ?>
+                                    <div class="box fbComm bg-white">
+                                        <h2 class="title text-end">التعليقات</h2>
+                                        <?php include './comments.php'; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>

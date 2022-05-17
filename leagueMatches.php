@@ -19,376 +19,382 @@
             </div>
             <div class="row page-content mt-3 pages position-relative">
                 <div class="col-xl-8 right-side allNews overflow-auto">
-                    <div class="leagueTables">
-                        <div id="fullMatchCenterTable">
-                            <div class="cardBox">
-                                <div class="matchCenterBox light full">
-                                    <nav>
-                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                            <h3 class="col title">جدول مباريات الدوري الايطالي </h3>
-                                            <select class="col nav-item nav-link x" name="" id="selectLeg">
-                                                <option value="0">كل الادوار </option>
-                                                <option value="week=37">
-                                                    الاسبوع 37
-                                                </option>
-                                                <option value="week=36">
-                                                    الاسبوع 36
-                                                </option>
-                                                <option value="week=35">
-                                                    الاسبوع 35
-                                                </option>
-                                                <option value="week=34">
-                                                    الاسبوع 34
-                                                </option>
-                                                <option value="week=33">
-                                                    الاسبوع 33
-                                                </option>
-                                            </select>
-                                        </div>
-                                    </nav>
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="all" role="tabpanel"
-                                            aria-labelledby="all-tab">
-                                            <div class="matchtableX">
-                                                <div class="matchBox title  dark">
-                                                    <h3 class="title">الاسبوع 37</h3>
+                    <div class="container">
+
+                        <div class="leagueTables">
+                            <div id="fullMatchCenterTable">
+                                <div class="cardBox">
+                                    <div class="matchCenterBox light full">
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <h3 class="col title">جدول مباريات الدوري الايطالي </h3>
+                                                <select class="col nav-item nav-link x" name="" id="selectLeg">
+                                                    <option value="0">كل الادوار </option>
+                                                    <option value="week=37">
+                                                        الاسبوع 37
+                                                    </option>
+                                                    <option value="week=36">
+                                                        الاسبوع 36
+                                                    </option>
+                                                    <option value="week=35">
+                                                        الاسبوع 35
+                                                    </option>
+                                                    <option value="week=34">
+                                                        الاسبوع 34
+                                                    </option>
+                                                    <option value="week=33">
+                                                        الاسبوع 33
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="all" role="tabpanel"
+                                                aria-labelledby="all-tab">
+                                                <div class="matchtableX">
+                                                    <div class="matchBox title  dark">
+                                                        <h3 class="title">الاسبوع 37</h3>
+                                                    </div>
+                                                    <div class="matchDate">
+                                                        <h4>السبت , 14 مايو 2022</h4>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="fullMatchBox ended">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="team.php"">
+                                                                        <span><img
+                                                                                src="
+                                                                        https://img.btolat.com/teamslogo/11867.png"
+                                                                        alt="إمبولي" title="إمبولي"></span>
+                                                                        <span class="teamName">إمبولي</span>
+                                                                    </a>
+                                                                    <a class="stat" href="matcheDetails.php">
+                                                                        <div class="status"><span>انتهت</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G">1 </div>
+                                                                            <div class="team2G">1 </div>
+                                                                        </div>
+                                                                    </a>
+                                                                    <a class="team2" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/12002.png"
+                                                                                alt="ساليرنيتانا"
+                                                                                title="ساليرنيتانا"></span>
+                                                                        <span class="teamName">ساليرنيتانا</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                        <li class="fullMatchBox ended" data-stat="ended">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/12051.png"
+                                                                                alt="أودينيزي" title="أودينيزي"></span>
+                                                                        <span class="teamName">أودينيزي</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="matcheDetails.php">
+
+                                                                        <div class="status"><span>انتهت</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G">2 </div>
+                                                                            <div class="team2G">3 </div>
+                                                                        </div>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/12027.png"
+                                                                                alt="سبيزيا" title="سبيزيا"></span>
+                                                                        <span class="teamName">سبيزيا</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                        <li class="fullMatchBox ended" data-stat="ended">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11914.png"
+                                                                                alt="هيلاس فيرونا"
+                                                                                title="هيلاس فيرونا"></span>
+                                                                        <span class="teamName">هيلاس فيرونا</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="matcheDetails.php">
+
+                                                                        <div class="status"><span>انتهت</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G">0 </div>
+                                                                            <div class="team2G">1 </div>
+                                                                        </div>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/12046.png"
+                                                                                alt="تورينو" title="تورينو"></span>
+                                                                        <span class="teamName">تورينو</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                        <li class="fullMatchBox ended" data-stat="ended">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11998.png"
+                                                                                alt="روما" title="روما"></span>
+                                                                        <span class="teamName">روما</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="matcheDetails.php">
+
+                                                                        <div class="status"><span>انتهت</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G">1 </div>
+                                                                            <div class="team2G">1 </div>
+                                                                        </div>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/12088.png"
+                                                                                alt="فينيتسيا" title="فينيتسيا"></span>
+                                                                        <span class="teamName">فينيتسيا</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="matchDate">
+                                                        <h4>الاحد , 15 مايو 2022</h4>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="fullMatchBox ended" data-stat="ended">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11822.png"
+                                                                                alt="بولونيا" title="بولونيا"></span>
+                                                                        <span class="teamName">بولونيا</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="matcheDetails.php">
+
+                                                                        <div class="status"><span>انتهت</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G">1 </div>
+                                                                            <div class="team2G">3 </div>
+                                                                        </div>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/12013.png"
+                                                                                alt="ساسولو" title="ساسولو"></span>
+                                                                        <span class="teamName">ساسولو</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                        <li class="fullMatchBox ended" data-stat="ended">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="/team/11947/napoli">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11947.png"
+                                                                                alt="نابولي" title="نابولي"></span>
+                                                                        <span class="teamName">نابولي</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="/matches/details/3017093">
+
+                                                                        <div class="status"><span>انتهت</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G">3 </div>
+                                                                            <div class="team2G">0 </div>
+                                                                        </div>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="/team/11903/genoa">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11903.png"
+                                                                                alt="جنوى" title="جنوى"></span>
+                                                                        <span class="teamName">جنوى</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                        <li class="fullMatchBox ended" data-stat="ended">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="/team/11938/milan">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11938.png"
+                                                                                alt="ميلان" title="ميلان"></span>
+                                                                        <span class="teamName">ميلان</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="/matches/details/3017092">
+
+                                                                        <div class="status"><span>انتهت</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G">2 </div>
+                                                                            <div class="team2G">0 </div>
+                                                                        </div>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="/team/11811/atalanta">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11811.png"
+                                                                                alt="أتالانتا" title="أتالانتا"></span>
+                                                                        <span class="teamName">أتالانتا</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                        </li>
+                                                        <li class="fullMatchBox ended" data-stat="ended">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="/team/11830/cagliari">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11830.png"
+                                                                                alt="كالياري" title="كالياري"></span>
+                                                                        <span class="teamName">كالياري</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="/matches/details/3017088">
+
+                                                                        <div class="status"><span>انتهت</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G">1 </div>
+                                                                            <div class="team2G">3 </div>
+                                                                        </div>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="/team/11917/internazionale">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11917.png"
+                                                                                alt="إنتر ميلان"
+                                                                                title="إنتر ميلان"></span>
+                                                                        <span class="teamName">إنتر ميلان</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                                    <div class="matchDate">
+                                                        <h4>الإثنين , 16 مايو 2022</h4>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="fullMatchBox notYet" data-stat="notYet">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/12005.png"
+                                                                                alt="سامبدوريا"
+                                                                                title="سامبدوريا"></span>
+                                                                        <span class="teamName">سامبدوريا</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="matcheDetails.php">
+
+                                                                        <div class="status"><span>لم تبدأ</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G"> </div>
+                                                                            <div class="team2G"> </div>
+                                                                        </div>
+                                                                        <span class="matchDate" id="timer"> <span>06:30
+                                                                                م</span> </span>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11894.png"
+                                                                                alt="فيورنتينا"
+                                                                                title="فيورنتينا"></span>
+                                                                        <span class="teamName">فيورنتينا</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                        <li class="fullMatchBox notYet" data-stat="notYet">
+                                                            <div class="matchBox">
+                                                                <div class="teams">
+                                                                    <a class="team1" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11922.jpg"
+                                                                                alt="يوفنتوس" title="يوفنتوس"></span>
+                                                                        <span class="teamName">يوفنتوس</span>
+                                                                    </a>
+
+                                                                    <a class="stat" href="matcheDetails.php">
+
+                                                                        <div class="status"><span>لم تبدأ</span></div>
+                                                                        <div id="reslt" class="results ">
+                                                                            <div class="team1G"> </div>
+                                                                            <div class="team2G"> </div>
+                                                                        </div>
+                                                                        <span class="matchDate" id="timer"> <span>08:45
+                                                                                م</span> </span>
+
+                                                                    </a>
+
+                                                                    <a class="team2" href="team.php">
+                                                                        <span><img
+                                                                                src="https://img.btolat.com/teamslogo/11925.png"
+                                                                                alt="لاتسيو" title="لاتسيو"></span>
+                                                                        <span class="teamName">لاتسيو</span>
+                                                                    </a>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
                                                 </div>
-                                                <div class="matchDate">
-                                                    <h4>السبت , 14 مايو 2022</h4>
-                                                </div>
-                                                <ul>
-                                                    <li class="fullMatchBox ended">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="team.php"">
-                                                                    <span><img
-                                                                            src="
-                                                                    https://img.btolat.com/teamslogo/11867.png"
-                                                                    alt="إمبولي" title="إمبولي"></span>
-                                                                    <span class="teamName">إمبولي</span>
-                                                                </a>
-                                                                <a class="stat" href="matcheDetails.php">
-                                                                    <div class="status"><span>انتهت</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G">1 </div>
-                                                                        <div class="team2G">1 </div>
-                                                                    </div>
-                                                                </a>
-                                                                <a class="team2" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/12002.png"
-                                                                            alt="ساليرنيتانا"
-                                                                            title="ساليرنيتانا"></span>
-                                                                    <span class="teamName">ساليرنيتانا</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="fullMatchBox ended" data-stat="ended">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/12051.png"
-                                                                            alt="أودينيزي" title="أودينيزي"></span>
-                                                                    <span class="teamName">أودينيزي</span>
-                                                                </a>
-
-                                                                <a class="stat" href="matcheDetails.php">
-
-                                                                    <div class="status"><span>انتهت</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G">2 </div>
-                                                                        <div class="team2G">3 </div>
-                                                                    </div>
-
-                                                                </a>
-
-                                                                <a class="team2" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/12027.png"
-                                                                            alt="سبيزيا" title="سبيزيا"></span>
-                                                                    <span class="teamName">سبيزيا</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="fullMatchBox ended" data-stat="ended">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11914.png"
-                                                                            alt="هيلاس فيرونا"
-                                                                            title="هيلاس فيرونا"></span>
-                                                                    <span class="teamName">هيلاس فيرونا</span>
-                                                                </a>
-
-                                                                <a class="stat" href="matcheDetails.php">
-
-                                                                    <div class="status"><span>انتهت</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G">0 </div>
-                                                                        <div class="team2G">1 </div>
-                                                                    </div>
-
-                                                                </a>
-
-                                                                <a class="team2" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/12046.png"
-                                                                            alt="تورينو" title="تورينو"></span>
-                                                                    <span class="teamName">تورينو</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="fullMatchBox ended" data-stat="ended">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11998.png"
-                                                                            alt="روما" title="روما"></span>
-                                                                    <span class="teamName">روما</span>
-                                                                </a>
-
-                                                                <a class="stat" href="matcheDetails.php">
-
-                                                                    <div class="status"><span>انتهت</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G">1 </div>
-                                                                        <div class="team2G">1 </div>
-                                                                    </div>
-
-                                                                </a>
-
-                                                                <a class="team2" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/12088.png"
-                                                                            alt="فينيتسيا" title="فينيتسيا"></span>
-                                                                    <span class="teamName">فينيتسيا</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="matchDate">
-                                                    <h4>الاحد , 15 مايو 2022</h4>
-                                                </div>
-                                                <ul>
-                                                    <li class="fullMatchBox ended" data-stat="ended">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11822.png"
-                                                                            alt="بولونيا" title="بولونيا"></span>
-                                                                    <span class="teamName">بولونيا</span>
-                                                                </a>
-
-                                                                <a class="stat" href="matcheDetails.php">
-
-                                                                    <div class="status"><span>انتهت</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G">1 </div>
-                                                                        <div class="team2G">3 </div>
-                                                                    </div>
-
-                                                                </a>
-
-                                                                <a class="team2" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/12013.png"
-                                                                            alt="ساسولو" title="ساسولو"></span>
-                                                                    <span class="teamName">ساسولو</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="fullMatchBox ended" data-stat="ended">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="/team/11947/napoli">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11947.png"
-                                                                            alt="نابولي" title="نابولي"></span>
-                                                                    <span class="teamName">نابولي</span>
-                                                                </a>
-
-                                                                <a class="stat" href="/matches/details/3017093">
-
-                                                                    <div class="status"><span>انتهت</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G">3 </div>
-                                                                        <div class="team2G">0 </div>
-                                                                    </div>
-
-                                                                </a>
-
-                                                                <a class="team2" href="/team/11903/genoa">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11903.png"
-                                                                            alt="جنوى" title="جنوى"></span>
-                                                                    <span class="teamName">جنوى</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="fullMatchBox ended" data-stat="ended">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="/team/11938/milan">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11938.png"
-                                                                            alt="ميلان" title="ميلان"></span>
-                                                                    <span class="teamName">ميلان</span>
-                                                                </a>
-
-                                                                <a class="stat" href="/matches/details/3017092">
-
-                                                                    <div class="status"><span>انتهت</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G">2 </div>
-                                                                        <div class="team2G">0 </div>
-                                                                    </div>
-
-                                                                </a>
-
-                                                                <a class="team2" href="/team/11811/atalanta">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11811.png"
-                                                                            alt="أتالانتا" title="أتالانتا"></span>
-                                                                    <span class="teamName">أتالانتا</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                    </li>
-                                                    <li class="fullMatchBox ended" data-stat="ended">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="/team/11830/cagliari">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11830.png"
-                                                                            alt="كالياري" title="كالياري"></span>
-                                                                    <span class="teamName">كالياري</span>
-                                                                </a>
-
-                                                                <a class="stat" href="/matches/details/3017088">
-
-                                                                    <div class="status"><span>انتهت</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G">1 </div>
-                                                                        <div class="team2G">3 </div>
-                                                                    </div>
-
-                                                                </a>
-
-                                                                <a class="team2" href="/team/11917/internazionale">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11917.png"
-                                                                            alt="إنتر ميلان" title="إنتر ميلان"></span>
-                                                                    <span class="teamName">إنتر ميلان</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-
-                                                </ul>
-                                                <div class="matchDate">
-                                                    <h4>الإثنين , 16 مايو 2022</h4>
-                                                </div>
-                                                <ul>
-                                                    <li class="fullMatchBox notYet" data-stat="notYet">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/12005.png"
-                                                                            alt="سامبدوريا" title="سامبدوريا"></span>
-                                                                    <span class="teamName">سامبدوريا</span>
-                                                                </a>
-
-                                                                <a class="stat" href="matcheDetails.php">
-
-                                                                    <div class="status"><span>لم تبدأ</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G"> </div>
-                                                                        <div class="team2G"> </div>
-                                                                    </div>
-                                                                    <span class="matchDate" id="timer"> <span>06:30
-                                                                            م</span> </span>
-
-                                                                </a>
-
-                                                                <a class="team2" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11894.png"
-                                                                            alt="فيورنتينا" title="فيورنتينا"></span>
-                                                                    <span class="teamName">فيورنتينا</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-                                                    <li class="fullMatchBox notYet" data-stat="notYet">
-                                                        <div class="matchBox">
-                                                            <div class="teams">
-                                                                <a class="team1" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11922.jpg"
-                                                                            alt="يوفنتوس" title="يوفنتوس"></span>
-                                                                    <span class="teamName">يوفنتوس</span>
-                                                                </a>
-
-                                                                <a class="stat" href="matcheDetails.php">
-
-                                                                    <div class="status"><span>لم تبدأ</span></div>
-                                                                    <div id="reslt" class="results ">
-                                                                        <div class="team1G"> </div>
-                                                                        <div class="team2G"> </div>
-                                                                    </div>
-                                                                    <span class="matchDate" id="timer"> <span>08:45
-                                                                            م</span> </span>
-
-                                                                </a>
-
-                                                                <a class="team2" href="team.php">
-                                                                    <span><img
-                                                                            src="https://img.btolat.com/teamslogo/11925.png"
-                                                                            alt="لاتسيو" title="لاتسيو"></span>
-                                                                    <span class="teamName">لاتسيو</span>
-                                                                </a>
-
-                                                            </div>
-
-                                                        </div>
-                                                    </li>
-
-                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
 

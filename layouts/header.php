@@ -19,8 +19,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark position-relative">
-            <div class="container  position-relative">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
                 <a class="navbar-brand" href="index.php"><img src="./assets/images/logo.png" alt="yallagoal"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -40,87 +40,89 @@
                                 بطولات
                             </a>
                             <div class="fullScreenMenu">
-                                <ul class="row list-unstyled">
-                                    <ul class="col list-unstyled">
-                                        <li class="title">
-                                            <a href="#">
-                                                بطولات الاندية
-                                            </a>
-                                        </li>
-                                        <div class="row">
-                                            <div class="mrow col">
-                                                <li><a href="league.php">الدوري
-                                                        المصري</a></li>
-                                                <li><a href="league.php">كأس
-                                                        الامم الافريقية</a>
-                                                </li>
-                                                <li><a href="league.php">دوري
-                                                        ابطال
-                                                        افريقيا</a></li>
-                                                <li><a href="league.php">الدوري
-                                                        السعودي</a></li>
-                                                <li><a href="league.php">دوري
-                                                        أبطال أوروبا</a></li>
-                                                <li><a href="league.php">الدوري
-                                                        الإنجليزي</a></li>
-                                                <li class="active"><a href="league.php">الدوري
-                                                        الاسباني</a></li>
-                                            </div>
-                                            <div class="mrow col">
-                                                <li><a href="league.php">الدوري
-                                                        الاوروبي</a></li>
-                                                <li><a href="league.php">الدوري
-                                                        الايطالي</a></li>
-                                                <li><a href="league.php">الدوري
-                                                        الالماني</a></li>
-                                                <li><a href="league.php">الدوري
-                                                        الفرنسي</a></li>
-                                                <li><a href="league.php"> كأس
-                                                        العالم </a></li>
-                                                <li><a href="league.php"">
-                                                        كوبا امريكا </a></li>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                    <ul class=" col list-unstyled">
-                                                <li class="title">
-                                                    <a href="#">بطولات المنتخبات</a>
-                                                </li>
-                                                <div class="row">
-
-                                                    <div class="mrow col">
-                                                        <li><a href="league.php">منتخب
-                                                                مصر</a></li>
-                                                        <li><a href="league.php">الأهلي</a>
-                                                        </li>
-                                                        <li><a href="league.php">الزمالك</a>
-                                                        </li>
-                                                        <li><a href="league.php">ريال
-                                                                مدريد</a></li>
-                                                        <li><a href="league.php">برشلونة</a>
-                                                        </li>
-                                                        <li><a href="league.php">ليفربول</a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="mrow col">
-                                                        <li><a href="league.php">
-                                                                مانشستر سيتي</a></li>
-                                                        <li><a href="league.php">مانشستر
-                                                                يونايتد</a></li>
-                                                        <li><a href="league.php">
-                                                                ارسنال</a></li>
-                                                        <li><a href="league.php">
-                                                                يوفنتوس</a></li>
-                                                        <li><a href="league.php">
-                                                                بيراميدز</a></li>
-                                                        <li><a href="league.php">باريس
-                                                                سان
-                                                                جيرمان</a></li>
-                                                    </div>
+                                <div class="container">
+                                    <ul class="row list-unstyled">
+                                        <ul class="col list-unstyled">
+                                            <li class="title">
+                                                <a href="#">
+                                                    بطولات الاندية
+                                                </a>
+                                            </li>
+                                            <div class="row">
+                                                <div class="mrow col">
+                                                    <li><a href="league.php">الدوري
+                                                            المصري</a></li>
+                                                    <li><a href="league.php">كأس
+                                                            الامم الافريقية</a>
+                                                    </li>
+                                                    <li><a href="league.php">دوري
+                                                            ابطال
+                                                            افريقيا</a></li>
+                                                    <li><a href="league.php">الدوري
+                                                            السعودي</a></li>
+                                                    <li><a href="league.php">دوري
+                                                            أبطال أوروبا</a></li>
+                                                    <li><a href="league.php">الدوري
+                                                            الإنجليزي</a></li>
+                                                    <li class="active"><a href="league.php">الدوري
+                                                            الاسباني</a></li>
                                                 </div>
-                                    </ul>
+                                                <div class="mrow col">
+                                                    <li><a href="league.php">الدوري
+                                                            الاوروبي</a></li>
+                                                    <li><a href="league.php">الدوري
+                                                            الايطالي</a></li>
+                                                    <li><a href="league.php">الدوري
+                                                            الالماني</a></li>
+                                                    <li><a href="league.php">الدوري
+                                                            الفرنسي</a></li>
+                                                    <li><a href="league.php"> كأس
+                                                            العالم </a></li>
+                                                    <li><a href="league.php"">
+                                                                    كوبا امريكا </a></li>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                                <ul class=" col list-unstyled">
+                                                    <li class="title">
+                                                        <a href="#">بطولات المنتخبات</a>
+                                                    </li>
+                                                    <div class="row">
 
-                                </ul>
+                                                        <div class="mrow col">
+                                                            <li><a href="league.php">منتخب
+                                                                    مصر</a></li>
+                                                            <li><a href="league.php">الأهلي</a>
+                                                            </li>
+                                                            <li><a href="league.php">الزمالك</a>
+                                                            </li>
+                                                            <li><a href="league.php">ريال
+                                                                    مدريد</a></li>
+                                                            <li><a href="league.php">برشلونة</a>
+                                                            </li>
+                                                            <li><a href="league.php">ليفربول</a>
+                                                            </li>
+                                                        </div>
+                                                        <div class="mrow col">
+                                                            <li><a href="league.php">
+                                                                    مانشستر سيتي</a></li>
+                                                            <li><a href="league.php">مانشستر
+                                                                    يونايتد</a></li>
+                                                            <li><a href="league.php">
+                                                                    ارسنال</a></li>
+                                                            <li><a href="league.php">
+                                                                    يوفنتوس</a></li>
+                                                            <li><a href="league.php">
+                                                                    بيراميدز</a></li>
+                                                            <li><a href="league.php">باريس
+                                                                    سان
+                                                                    جيرمان</a></li>
+                                                        </div>
+                                                    </div>
+                                        </ul>
+
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -128,86 +130,89 @@
                                 فيديوهات
                             </a>
                             <div class="fullScreenMenu">
-                                <ul class="row list-unstyled">
-                                    <ul class="col list-unstyled">
-                                        <li class="title">
-                                            <a href="#">
-                                                فيديوهات بالبطولة
-                                            </a>
-                                        </li>
-                                        <div class="row">
+                                <div class="container">
 
-                                            <div class="mrow col">
-                                                <li><a href="leagueVideos.php">الدوري
-                                                        المصري</a></li>
-                                                <li><a href="leagueVideos.php">كأس
-                                                        الامم الافريقية</a>
-                                                </li>
-                                                <li><a href="leagueVideos.php">دوري
-                                                        ابطال
-                                                        افريقيا</a></li>
-                                                <li><a href="leagueVideos.php">الدوري
-                                                        السعودي</a></li>
-                                                <li><a href="leagueVideos.php">دوري
-                                                        أبطال أوروبا</a></li>
-                                                <li><a href="leagueVideos.php">الدوري
-                                                        الإنجليزي</a></li>
-                                                <li class="active"><a href="leagueVideos.php">الدوري
-                                                        الاسباني</a></li>
-                                            </div>
-                                            <div class="mrow col">
-                                                <li><a href="leagueVideos.php">الدوري
-                                                        الاوروبي</a></li>
-                                                <li><a href="leagueVideos.php">الدوري
-                                                        الايطالي</a></li>
-                                                <li><a href="leagueVideos.php">الدوري
-                                                        الالماني</a></li>
-                                                <li><a href="leagueVideos.php">الدوري
-                                                        الفرنسي</a></li>
-                                                <li><a href="leagueVideos.php"> كأس
-                                                        العالم </a></li>
-                                                <li><a href="leagueVideos.php">
-                                                        كوبا امريكا </a></li>
-                                            </div>
-                                        </div>
-                                    </ul>
-                                    <ul class="col list-unstyled">
-                                        <li class="title">
-                                            <a href="#"> فيديوهات بالفريق</a>
-                                        </li>
-                                        <div class="row">
-                                            <div class="mrow col">
-                                                <li><a href="leagueVideos.php">منتخب
-                                                        مصر</a></li>
-                                                <li><a href="leagueVideos.php">الأهلي</a>
-                                                </li>
-                                                <li><a href="leagueVideos.php">الزمالك</a>
-                                                </li>
-                                                <li><a href="leagueVideos.php">ريال
-                                                        مدريد</a></li>
-                                                <li><a href="leagueVideos.php">برشلونة</a>
-                                                </li>
-                                                <li><a href="leagueVideos.php">ليفربول</a>
-                                                </li>
-                                            </div>
-                                            <div class="mrow col">
-                                                <li><a href="leagueVideos.php">
-                                                        مانشستر سيتي</a></li>
-                                                <li><a href="leagueVideos.php">مانشستر
-                                                        يونايتد</a></li>
-                                                <li><a href="leagueVideos.php">
-                                                        ارسنال</a></li>
-                                                <li><a href="leagueVideos.php">
-                                                        يوفنتوس</a></li>
-                                                <li><a href="leagueVideos.php">
-                                                        بيراميدز</a></li>
-                                                <li><a href="leagueVideos.php">باريس سان
-                                                        جيرمان</a></li>
-                                            </div>
-                                        </div>
-                                    </ul>
+                                    <ul class="row list-unstyled">
+                                        <ul class="col list-unstyled">
+                                            <li class="title">
+                                                <a href="#">
+                                                    فيديوهات بالبطولة
+                                                </a>
+                                            </li>
+                                            <div class="row">
 
-                                </ul>
+                                                <div class="mrow col">
+                                                    <li><a href="leagueVideos.php">الدوري
+                                                            المصري</a></li>
+                                                    <li><a href="leagueVideos.php">كأس
+                                                            الامم الافريقية</a>
+                                                    </li>
+                                                    <li><a href="leagueVideos.php">دوري
+                                                            ابطال
+                                                            افريقيا</a></li>
+                                                    <li><a href="leagueVideos.php">الدوري
+                                                            السعودي</a></li>
+                                                    <li><a href="leagueVideos.php">دوري
+                                                            أبطال أوروبا</a></li>
+                                                    <li><a href="leagueVideos.php">الدوري
+                                                            الإنجليزي</a></li>
+                                                    <li class="active"><a href="leagueVideos.php">الدوري
+                                                            الاسباني</a></li>
+                                                </div>
+                                                <div class="mrow col">
+                                                    <li><a href="leagueVideos.php">الدوري
+                                                            الاوروبي</a></li>
+                                                    <li><a href="leagueVideos.php">الدوري
+                                                            الايطالي</a></li>
+                                                    <li><a href="leagueVideos.php">الدوري
+                                                            الالماني</a></li>
+                                                    <li><a href="leagueVideos.php">الدوري
+                                                            الفرنسي</a></li>
+                                                    <li><a href="leagueVideos.php"> كأس
+                                                            العالم </a></li>
+                                                    <li><a href="leagueVideos.php">
+                                                            كوبا امريكا </a></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                        <ul class="col list-unstyled">
+                                            <li class="title">
+                                                <a href="#"> فيديوهات بالفريق</a>
+                                            </li>
+                                            <div class="row">
+                                                <div class="mrow col">
+                                                    <li><a href="leagueVideos.php">منتخب
+                                                            مصر</a></li>
+                                                    <li><a href="leagueVideos.php">الأهلي</a>
+                                                    </li>
+                                                    <li><a href="leagueVideos.php">الزمالك</a>
+                                                    </li>
+                                                    <li><a href="leagueVideos.php">ريال
+                                                            مدريد</a></li>
+                                                    <li><a href="leagueVideos.php">برشلونة</a>
+                                                    </li>
+                                                    <li><a href="leagueVideos.php">ليفربول</a>
+                                                    </li>
+                                                </div>
+                                                <div class="mrow col">
+                                                    <li><a href="leagueVideos.php">
+                                                            مانشستر سيتي</a></li>
+                                                    <li><a href="leagueVideos.php">مانشستر
+                                                            يونايتد</a></li>
+                                                    <li><a href="leagueVideos.php">
+                                                            ارسنال</a></li>
+                                                    <li><a href="leagueVideos.php">
+                                                            يوفنتوس</a></li>
+                                                    <li><a href="leagueVideos.php">
+                                                            بيراميدز</a></li>
+                                                    <li><a href="leagueVideos.php">باريس سان
+                                                            جيرمان</a></li>
+                                                </div>
+                                            </div>
+                                        </ul>
+
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item">
