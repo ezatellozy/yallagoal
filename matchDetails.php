@@ -106,44 +106,48 @@
                                                         </h1>
                                                         <!-- End tabTitle -->
                                                         <div class="card">
-                                                            <div class="row">
-                                                                <div class="col fastHis text-right">
-                                                                    <img src="https://img.btolat.com/teamslogo/11867.png"
-                                                                        class="imgHis" alt="إمبولي">
-                                                                    <span>إمبولي</span>
+                                                            <div class="container">
+
+                                                                <div class="row">
+                                                                    <div class="col fastHis text-right">
+                                                                        <img src="https://img.btolat.com/teamslogo/11867.png"
+                                                                            class="imgHis" alt="إمبولي">
+                                                                        <span>إمبولي</span>
+                                                                    </div>
+                                                                    <div class="col fastHis text-center">
+                                                                        17 مباراة
+                                                                    </div>
+                                                                    <div class="col fastHis text-left">
+                                                                        <img src="https://img.btolat.com/teamslogo/12002.png"
+                                                                            class="imgHis" alt="ساليرنيتانا">
+                                                                        <span>ساليرنيتانا</span>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="col fastHis text-center">
-                                                                    17 مباراة
-                                                                </div>
-                                                                <div class="col fastHis text-left">
-                                                                    <img src="https://img.btolat.com/teamslogo/12002.png"
-                                                                        class="imgHis" alt="ساليرنيتانا">
-                                                                    <span>ساليرنيتانا</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="row historyChart">
-                                                                <div class="historyChartTeamAWin"
-                                                                    style="width: 58.8235%;">
-                                                                    <span></span>
-                                                                    <p>
-                                                                        فوز
-                                                                        <span>10</span>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="historyChartDraw" style="width: 17.6471%;">
-                                                                    <span></span>
-                                                                    <p>
-                                                                        تعادل
-                                                                        <span>3</span>
-                                                                    </p>
-                                                                </div>
-                                                                <div class="historyChartTeamBWin"
-                                                                    style="width: 23.5294%;">
-                                                                    <span></span>
-                                                                    <p>
-                                                                        فوز
-                                                                        <span>4</span>
-                                                                    </p>
+                                                                <div class="row historyChart">
+                                                                    <div class="historyChartTeamAWin"
+                                                                        style="width: 58.8235%;">
+                                                                        <span></span>
+                                                                        <p>
+                                                                            فوز
+                                                                            <span>10</span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="historyChartDraw"
+                                                                        style="width: 17.6471%;">
+                                                                        <span></span>
+                                                                        <p>
+                                                                            تعادل
+                                                                            <span>3</span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="historyChartTeamBWin"
+                                                                        style="width: 23.5294%;">
+                                                                        <span></span>
+                                                                        <p>
+                                                                            فوز
+                                                                            <span>4</span>
+                                                                        </p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
 
@@ -806,10 +810,6 @@
 
 
                                             </div>
-
-
-
-
                                         </div>
                                     </div>
                                     <div class="box fbComm bg-white">

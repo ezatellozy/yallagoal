@@ -44,7 +44,7 @@
                                     </a>
                                     <a href="#" class="categoryTag">الدوري المصري</a>
                                 </div>
-                            </div>
+                            </div> 
                             <?php } ?>
                             <div class="text-start mt-2 mb-3">
                                 <a href="news.php" class="btn btn-primary"> المزيد من الفيديوهات <svg
@@ -58,13 +58,19 @@
                             </div>
                         </div>
                         <nav class="mb-3" aria-label="Page navigation">
-                            <ul class="pagination p-0 mt-3 justify-content-center">
-                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                            </ul>
+                        <ul class="pagination p-0 mt-3 justify-content-center">
+                                    <li class="page-item disabled"><a class="page-link" href="#">السابق</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"><span class="page-link ellipse clickable">…</span></li>
+                                    <li class="page-item"><a href="#" class="page-link">10</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">12</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">التالي</a></li>
+                                </ul>
                         </nav>
                     </div>
                 </div>

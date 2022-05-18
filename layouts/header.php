@@ -27,7 +27,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.php">الرئيسية</a>
@@ -42,14 +42,14 @@
                             <div class="fullScreenMenu">
                                 <div class="container">
                                     <ul class="row list-unstyled">
-                                        <ul class="col list-unstyled">
+                                        <ul class="col-lg-6 list-unstyled">
                                             <li class="title">
                                                 <a href="#">
                                                     بطولات الاندية
                                                 </a>
                                             </li>
                                             <div class="row">
-                                                <div class="mrow col">
+                                                <div class="mrow col-lg-6">
                                                     <li><a href="league.php">الدوري
                                                             المصري</a></li>
                                                     <li><a href="league.php">كأس
@@ -67,7 +67,7 @@
                                                     <li class="active"><a href="league.php">الدوري
                                                             الاسباني</a></li>
                                                 </div>
-                                                <div class="mrow col">
+                                                <div class="mrow col-lg-6">
                                                     <li><a href="league.php">الدوري
                                                             الاوروبي</a></li>
                                                     <li><a href="league.php">الدوري
@@ -83,13 +83,12 @@
                                                         </div>
                                                     </div>
                                                 </ul>
-                                                <ul class=" col list-unstyled">
+                                        <ul class=" col-lg-6 list-unstyled">
                                                     <li class="title">
                                                         <a href="#">بطولات المنتخبات</a>
                                                     </li>
                                                     <div class="row">
-
-                                                        <div class="mrow col">
+                                                        <div class="mrow col-lg-6">
                                                             <li><a href="league.php">منتخب
                                                                     مصر</a></li>
                                                             <li><a href="league.php">الأهلي</a>
@@ -103,7 +102,7 @@
                                                             <li><a href="league.php">ليفربول</a>
                                                             </li>
                                                         </div>
-                                                        <div class="mrow col">
+                                                        <div class="mrow col-lg-6">
                                                             <li><a href="league.php">
                                                                     مانشستر سيتي</a></li>
                                                             <li><a href="league.php">مانشستر
@@ -133,7 +132,7 @@
                                 <div class="container">
 
                                     <ul class="row list-unstyled">
-                                        <ul class="col list-unstyled">
+                                        <ul class="col-lg-6 list-unstyled">
                                             <li class="title">
                                                 <a href="#">
                                                     فيديوهات بالبطولة
@@ -141,7 +140,7 @@
                                             </li>
                                             <div class="row">
 
-                                                <div class="mrow col">
+                                                <div class="mrow col-lg-6">
                                                     <li><a href="leagueVideos.php">الدوري
                                                             المصري</a></li>
                                                     <li><a href="leagueVideos.php">كأس
@@ -159,7 +158,7 @@
                                                     <li class="active"><a href="leagueVideos.php">الدوري
                                                             الاسباني</a></li>
                                                 </div>
-                                                <div class="mrow col">
+                                                <div class="mrow col-lg-6">
                                                     <li><a href="leagueVideos.php">الدوري
                                                             الاوروبي</a></li>
                                                     <li><a href="leagueVideos.php">الدوري
@@ -175,12 +174,12 @@
                                                 </div>
                                             </div>
                                         </ul>
-                                        <ul class="col list-unstyled">
+                                        <ul class="col-lg-6 list-unstyled">
                                             <li class="title">
                                                 <a href="#"> فيديوهات بالفريق</a>
                                             </li>
                                             <div class="row">
-                                                <div class="mrow col">
+                                                <div class="mrow col-lg-6">
                                                     <li><a href="leagueVideos.php">منتخب
                                                             مصر</a></li>
                                                     <li><a href="leagueVideos.php">الأهلي</a>
@@ -194,7 +193,7 @@
                                                     <li><a href="leagueVideos.php">ليفربول</a>
                                                     </li>
                                                 </div>
-                                                <div class="mrow col">
+                                                <div class="mrow col-lg-6">
                                                     <li><a href="leagueVideos.php">
                                                             مانشستر سيتي</a></li>
                                                     <li><a href="leagueVideos.php">مانشستر
